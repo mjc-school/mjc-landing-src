@@ -1,0 +1,173 @@
+/* COMMON */
+
+* {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+}
+
+body {
+    margin: 0px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.button {
+    border: none;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-size: 22px;
+    text-transform: lowercase;
+    padding: 7px 54px;
+    cursor: pointer;
+}
+
+.button-violet {
+    background: #594DE1;
+}
+
+.right-bg-code {
+    position: absolute;
+    top: 90px;
+    right: -460px;
+    z-index: -999;
+    transform: rotate(12.39deg);
+}
+
+.left-bg-code {
+    position: absolute;
+    top: -245;
+    left: -550;
+    z-index: -999;
+    transform: rotate(27.86deg);
+}
+
+.logo {
+    position: absolute;
+    top: 260;
+    left: 75;
+    z-index: -999;
+}
+
+.section {
+    padding: 0px 120px;
+}
+
+.columns {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.rows {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.mt-45 {
+    margin-top: 45px;
+}
+
+.mt-110 {
+    margin-top: 110px;
+}
+
+.ml-50p {
+    margin-left: 50%;
+}
+
+.ml-400 {
+    margin-left: 400px;
+}
+
+.ml-210 {
+    margin-left: 210px;
+}
+
+.w-50 {
+    width: 49%;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+.font-24 {
+    font-size: 24px;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.lh-34 {
+    line-height: 34.2px;
+}
+
+.lh-40 {
+    line-height: 40.8px;
+}
+
+.ls-lower {
+    letter-spacing: -0.03em;
+}
+
+.center {
+    text-align: center;
+}
+
+.fixed {
+    position: fixed;
+}
+
+
+/* HEADER */
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    background: #56BE7D;
+}
+
+.header-right,
+.header-links {
+    display: flex;
+    flex-flow: row;
+}
+
+ul.header-links>li {
+    list-style-type: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 60px;
+}
+
+
+/* CONTENT */
+
+.content {
+    margin-top: 80px;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
