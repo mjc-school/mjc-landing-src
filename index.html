@@ -6,8 +6,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Mono:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Roboto+Mono:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/flickity.css" media="screen">
     <link rel="stylesheet" href="assets/css/styles.css">
+
 </head>
 
 <body>
@@ -24,18 +26,21 @@
                     <li>FAQ</li>
                     <li>Contact us</li>
                 </ul>
-                <button class="button button-violet ">
+                <a class="button button-violet button-sm" href="#">
                     Join
-                </button>
+                </a>
             </div>
         </div>
     </div>
     <div class="content">
         <img src="assets/images/code-rectangle-big.png" class="left-bg-code" />
         <img src="assets/images/logo.png" class="logo" />
-        <img src="assets/images/binary-code.png" class="right-bg-code" />
 
-        <div id="about-the-school" class="section columns">
+        <div id="right-bg-code">
+            <div></div>
+        </div>
+
+        <div id="about-the-school" class="section columns f-between">
             <div class="mt-45 ml-400">
                 <h1 class="ls-lower">
                     MJC School -
@@ -47,7 +52,7 @@
             <div class="font-light font-24 lh-40 mt-45 ml-400 w-50 ls-lower">
                 Educational environment for Engineers, students, and Java enthusiasts to deliver top-notch discipline standards and create knowledge-sharing culture.
             </div>
-            <div class="rows mt-110 font-18">
+            <div class="rows f-between mt-110 font-18">
                 <div class="w-50 font-montserrat lh-34">
                     MJC School was created by Engineers for Engineers. That makes us think that the content and the processes are as close as possible to meet the requirements of modern projects.
                 </div>
@@ -55,7 +60,7 @@
                     <img src="assets/images/code-rectangle.png">
                 </div>
             </div>
-            <div class="rows mt-45 font-18">
+            <div class="rows f-between mt-45 font-18">
                 <div class="w-50 font-montserrat lh-34">
                     At the same time, community school is the key to help to attract new members by helping all the participants to grow. This is a great chance to become a member of a wide family of Java Engineers.
                 </div>
@@ -63,9 +68,272 @@
                     Our school was made on top of other communities' experience with some innovative ideas from our Engineers. Learn Java with us and become a Junior Software Engineer.
                 </div>
             </div>
+            <div class="rows f-center mt-45">
+                <a href="#" class="button button-green button-lemon-shadow">start learning</a>
+            </div>
+            <div class="rows f-center mt-80">
+                <h2>MJC School: Benefits</h2>
+            </div>
+            <div class="columns f-between mt-45">
+                <div class="rows">
+                    <div class="columns f-between">
+                        <div class="card card-green">
+                            <h4>ONLINE EDUCATION</h4>
+                            <p class="mt-10 font-18 font-montserrat m-0">Education is online, available from any location!</p>
+                        </div>
+                        <div class="card card-lemon mt-25">
+                            <h4>FREE FOR EVERYONE</h4>
+                            <p class="mt-10 font-18 font-montserrat m-0">Education is free of charge. Everyone can join, all you need are basic programming skills.</p>
+                        </div>
+                    </div>
+                    <div class="columns f-between ml-25">
+                        <div class="rows card card-lemon f-align-center">
+                            <h4>EXPERIENCED MENTORS</h4>
+                            <p class="font-18 font-montserrat m-0">Course is created and maintained by real professionals who work with Java on a daily basis. </p>
+                        </div>
+                        <div class="rows f-between mt-25">
+                            <div class="card card-green f-between">
+                                <h4>PRODUCTION MENTORING</h4>
+                                <p class="mt-10 font-18 font-montserrat m-0">During the Stage 4 you'll get into individual mentoring where production engineers will help you to cover with advanced education program!</p>
+                            </div>
+                            <div class="card card-lemon ml-25">
+                                <h4>PROFESSIONAL OPPORTUNITIES</h4>
+                                <p class="mt-10 font-18 font-montserrat m-0">The course gives sufficient knowledge to join a company as a Junior Software Developer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rows card card-green f-align-center mt-25">
+                    <h4>COMMUNITY SUPPORT</h4>
+                    <p class="font-18 font-montserrat m-0">Community - is not only about school! Subscribe to our channels, join chats and stay informed about all the upcoming events!</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="agenda" class="section columns f-between mt-80">
+            <div class="rows f-center">
+                <h2 class="ls-lower">
+                    Course Agenda
+                </h2>
+            </div>
+            <div id="carousel" class="mt-45 js-flickity" data-flickity-options='{"wrapAround": false, "cellAlign": "left", "setGallerySize": true, "arrowShape": "M 0 50 L 25 75 L 32 67 L 20 55 L 350 55 L 350 45 L 20 45 L 32 32 L 25 25 Z"}'>
+                <div class="stage rows f-between ">
+                    <div class="w-30 ">
+                        <h4 class="font-light ">STAGE 0</h4>
+                        <b><h4>FUNDAMENTALS</h4></b>
+                    </div>
+                    <div class="w-70 columns f-between ">
+                        <p class="font-montserrat m-0 ">An introductory stage to get acquainted with computer science and Java basics. You should have initial computer science knowledge. If you don't, please pass this course.</p>
+                        <div>
+                            <div class="rows mt-25 ">
+                                <div class="w-30 font-montserrat font-bold ">Estimated Duration:</div>
+                                <div class="w-70 font-montserrat ">2 Months</div>
+                            </div>
+                            <div class="rows mt-25 ">
+                                <div class="w-30 font-montserrat font-bold ">Format:</div>
+                                <div class="w-70 font-montserrat ">Self-paced, Online, Practical Tasks </div>
+                            </div>
+                            <div class="rows mt-25 ">
+                                <div class="w-30 font-montserrat font-bold ">Program:</div>
+                                <div class="w-70 font-montserrat ">Computer science course, Infrastructure & Environment, JDK, JRE, Git Basics, IDE, Junit Concepts, Java Lang Syntax, Java Fundamentals, Algorithms and Data Structures, OOP/OOD Fundamentals </div>
+                            </div>
+                            <div class="rows mt-25 ">
+                                <div class="w-30 font-montserrat font-bold ">Result:</div>
+                                <div class="w-70 font-montserrat ">After stage 0 you will be able to develop simple console Java applications.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stage rows f-between ">
+                    <div class="w-30 ">
+                        <h4 class="font-light ">STAGE 1</h4>
+                        <b><h4>CORE</h4></b>
+                    </div>
+                    <div class="w-70 columns f-between ">
+                        <p class="font-montserrat m-0 ">The stage to get acquainted with core mechanisms and tools Java provide to solve various tasks.</p>
+                        <div>
+                            <div class="rows mt-25 ">
+                                <div class="w-30 font-montserrat font-bold ">Estimated Duration:</div>
+                                <div class="w-70 font-montserrat ">2 Months</div>
+                            </div>
+                            <div class="rows mt-25 ">
+                                <div class="w-30 font-montserrat font-bold ">Format:</div>
+                                <div class="w-70 font-montserrat ">Self-paced, Online, Practical Tasks </div>
+                            </div>
+                            <div class="rows mt-25 ">
+                                <div class="w-30 font-montserrat font-bold ">Program:</div>
+                                <div class="w-70 font-montserrat ">Exceptions, Strings, Generics, Collections, Stream API, Java I/O, NIO, Data Formats (JSON, XML, YML), Concurrency</div>
+                            </div>
+                            <div class="rows mt-25 ">
+                                <div class="w-30 font-montserrat font-bold ">Result:</div>
+                                <div class="w-70 font-montserrat ">After this stage, you will understand the Java Core and will be able to develop more complex applications.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stage rows f-between ">
+                    <div class="w-30 ">
+                        <h4 class="font-light ">STAGE 2</h4>
+                        <b><h4>WEB</h4></b>
+                    </div>
+                    <div class="w-70 columns f-between ">
+                        <p class="font-montserrat m-0 ">The stage to get acquainted with Web applications and Web itself.</p>
+                        <div>
+                            <div class="rows mt-25 ">
+                                <div class="w-30 font-montserrat font-bold ">Estimated Duration:</div>
+                                <div class="w-70 font-montserrat ">1 Month</div>
+                            </div>
+                            <div class="rows mt-25 ">
+                                <div class="w-30 font-montserrat font-bold ">Format:</div>
+                                <div class="w-70 font-montserrat ">Self-paced, Online, Practical Tasks </div>
+                            </div>
+                            <div class="rows mt-25 ">
+                                <div class="w-30 font-montserrat font-bold ">Program:</div>
+                                <div class="w-70 font-montserrat ">Git & Build Tools, Web, HTTP(s) methods, Java EE Servlets, SQL, Architecture basics (Design patterns, DAO/repository, JDBC), Architectural patterns, Engineering Best-practices</div>
+                            </div>
+                            <div class="rows mt-25 ">
+                                <div class="w-30 font-montserrat font-bold ">Result:</div>
+                                <div class="w-70 font-montserrat ">After this stage, you will be able to develop web applications in Java using Servlets technology, use build and version control tools</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stage rows f-between ">
+                    <div class="w-30 ">
+                        <h4 class="font-light ">STAGE 3</h4>
+                        <b><h4>MODERN FRAMEWORKS</h4></b>
+                    </div>
+                    <div class="w-70 columns f-between ">
+                        <p class="font-montserrat m-0 ">The stage to get acquainted with modern frameworks and development approaches and techniques.</p>
+                        <div>
+                            <div class="rows mt-25 ">
+                                <div class="w-30 font-montserrat font-bold ">Estimated Duration:</div>
+                                <div class="w-70 font-montserrat ">2 Months</div>
+                            </div>
+                            <div class="rows mt-25 ">
+                                <div class="w-30 font-montserrat font-bold ">Format:</div>
+                                <div class="w-70 font-montserrat ">Self-paced, Online, Light Talks, Practical Tasks, Roasting Battles, Consultants</div>
+                            </div>
+                            <div class="rows mt-25 ">
+                                <div class="w-30 font-montserrat font-bold ">Program:</div>
+                                <div class="w-70 font-montserrat ">Architecture advanced, ORM - JPA, Hibernate, Spring Core, REST Basics – Spring Web, Swagger</div>
+                            </div>
+                            <div class="rows mt-25 ">
+                                <div class="w-30 font-montserrat font-bold ">Result:</div>
+                                <div class="w-70 font-montserrat ">After this stage, you will be able to develop web applications in Java utilizing modern frameworks and libraries.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stage rows f-between ">
+                    <div class="w-30 ">
+                        <h4 class="font-light ">STAGE 4</h4>
+                        <b><h4>ENTERPRISE</h4></b>
+                    </div>
+                    <div class="w-70 columns f-between ">
+                        <p class="font-montserrat m-0 ">The stage to dive into frameworks and modern engineering practices.</p>
+                        <div>
+                            <div class="rows mt-25 ">
+                                <div class="w-30 font-montserrat font-bold ">Estimated Duration:</div>
+                                <div class="w-70 font-montserrat ">2 Months</div>
+                            </div>
+                            <div class="rows mt-25 ">
+                                <div class="w-30 font-montserrat font-bold ">Format:</div>
+                                <div class="w-70 font-montserrat ">Online, Light Talks, Practical Tasks, Roasting Battles, Mentoring</div>
+                            </div>
+                            <div class="rows mt-25 ">
+                                <div class="w-30 font-montserrat font-bold ">Program:</div>
+                                <div class="w-70 font-montserrat ">CI\CD, REST Advanced – HATEOAS, Spring Boot, Authentication & Authorization, Spring Security, Modern UI, AWS, Spring Data</div>
+                            </div>
+                            <div class="rows mt-25 ">
+                                <div class="w-30 font-montserrat font-bold ">Result:</div>
+                                <div class="w-70 font-montserrat ">After this stage, you will be able to deploy your application to the Cloud, configure authentication and develop a UI for your app.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="why-java" class="section columns mt-80 f-align-center">
+
+            <img id="binary-code-left" src="assets/images/binary-code.png" />
+            <img id="code-ellipse-small" src="assets/images/code-ellipse-small.png" />
+
+            <div class="rows f-center">
+                <a href="#" class="button button-violet button-lemon-shadow">join the course</a>
+            </div>
+            <div class="rows f-center mt-80">
+                <h2 class="ls-lower">
+                    Why Choose Java
+                </h2>
+            </div>
+            <div class="columns f-center mt-45 w-50">
+                <p class="font-montserrat">Java is one of the most popular languages in programming. This language is most likely the most common and basic language that most programmers start from. Many Software Developers are still in favor of using Java as a programming language
+                    because of its flexibility. </p>
+                <p class="font-montserrat">Java is a multiplatform programming language, that is used in many areas like <b class="font-montserrat">Web, Server-side, Big Data Development</b>.</p>
+                <p class="font-montserrat">Java is a popular programming language. It's used in many international companies, including
+                    <b class="font-montserrat">Uber, Airbnb, Google, Netflix, Instagram, Spotify</b>. Nowadays there are tens of thousands vacancies for Java Developer with competitive salaries </p>
+                <p class="font-montserrat">Java has a great community. There are many conferences and talks on Java. In you programs you can use any of millions free community-developed code libraries, or you can help to enhance them.
+                </p>
+            </div>
+        </div>
+
+        <div id="faq" class="section columns mt-45">
+
+            <img id="code-ellipse" src="assets/images/code-ellipse.png" />
+
+            <div class="rows f-center mt-45">
+                <h2 class="ls-lower">
+                    Frequently Asked Questions
+                </h2>
+            </div>
+            <div class="rows f-between">
+                <div class="columns f-center w-50">
+                    <div class="question">
+                        <p class="font-montserrat font-bold">What is Java?</p>
+                        <img src="assets/images/underline.png" />
+                        <p class="font-montserrat">
+                            Java is a high-level multiplatform programming language, developed by Sun Microsystems in 1995. Since then Java got many major updates and now it supports all modern features.
+                        </p>
+                    </div>
+                    <div class="question">
+                        <p class="font-montserrat font-bold">What is Java used for?</p>
+                        <img src="assets/images/underline.png" />
+                        <p class="font-montserrat">
+                            Java is a general-purpose language, so you can develop any kind of application using it. Java is mainly used for creating enterprise web applications, and for BigData development.
+                        </p>
+                    </div>
+                    <div class="question">
+                        <p class="font-montserrat font-bold">How long does it take to study Java?</p>
+                        <img src="assets/images/underline.png" />
+                        <p class="font-montserrat">
+                            Expected course length is 10 months.
+                        </p>
+                    </div>
+                </div>
+                <div class="columns f-center w-50">
+                    <div class="question">
+                        <p class="font-montserrat font-bold">What type of applications does this course focus on?</p>
+                        <img src="assets/images/underline.png" />
+                        <p class="font-montserrat">
+                            This course focuses on web services, you will study how to create a backend for a web application.
+                        </p>
+                    </div>
+                    <div class="question">
+                        <p class="font-montserrat font-bold">What will I be able to do after this course?</p>
+                        <img src="assets/images/underline.png" />
+                        <p class="font-montserrat">
+                            After the course you will be able to pass an interview for Junior Java Developer position and apply for a job offer in a vast majority of IT companies.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
+    <script src="assets/js/flickity.pkgd.min.js "></script>
 </body>
 
 </html>

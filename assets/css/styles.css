@@ -12,7 +12,22 @@ body {
 h1 {
     margin: 0;
     font-size: 60px;
+    line-height: 74px;
     font-weight: 300;
+}
+
+h2 {
+    margin: 0;
+    font-size: 44px;
+    line-height: 58px;
+    font-weight: 300;
+}
+
+h4 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 400;
 }
 
 .button {
@@ -21,35 +36,42 @@ h1 {
     color: #FFFFFF;
     font-size: 22px;
     text-transform: lowercase;
-    padding: 7px 54px;
+    padding: 0px 54px;
     cursor: pointer;
+    text-decoration: none;
+    line-height: 60px;
+}
+
+.button-sm {
+    line-height: 52px;
 }
 
 .button-violet {
     background: #594DE1;
 }
 
-.right-bg-code {
-    position: absolute;
-    top: 90px;
-    right: -460px;
-    z-index: -999;
-    transform: rotate(12.39deg);
+.button-green {
+    background: #70C690;
 }
 
-.left-bg-code {
-    position: absolute;
-    top: -245;
-    left: -550;
-    z-index: -999;
-    transform: rotate(27.86deg);
+.button-lemon-shadow {
+    box-shadow: 5px -7px 0px 0px #F0FF92;
 }
 
-.logo {
-    position: absolute;
-    top: 260;
-    left: 75;
-    z-index: -999;
+.card {
+    background: #FFF8EB;
+    padding: 34px 47px;
+    border-radius: 12px;
+    display: flex;
+    flex-flow: column;
+}
+
+.card-green {
+    background: #CFF8DF;
+}
+
+.card-lemon {
+    background: #F3FFA8;
 }
 
 .section {
@@ -59,21 +81,51 @@ h1 {
 .columns {
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
 }
 
 .rows {
     display: flex;
     flex-flow: row;
+}
+
+.f-between {
     justify-content: space-between;
+}
+
+.f-center {
+    justify-content: center;
+}
+
+.f-align-center {
+    align-items: center;
+}
+
+.m-0 {
+    margin: 0
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-25 {
+    margin-top: 25px;
 }
 
 .mt-45 {
     margin-top: 45px;
 }
 
+.mt-80 {
+    margin-top: 80px;
+}
+
 .mt-110 {
     margin-top: 110px;
+}
+
+.ml-25 {
+    margin-left: 25px;
 }
 
 .ml-50p {
@@ -88,8 +140,32 @@ h1 {
     margin-left: 210px;
 }
 
+.w-30 {
+    width: 29%;
+}
+
+.w-33 {
+    width: 32%;
+}
+
+.w-40 {
+    width: 39%;
+}
+
 .w-50 {
     width: 49%;
+}
+
+.w-60 {
+    width: 59%;
+}
+
+.w-67 {
+    width: 66%;
+}
+
+.w-70 {
+    width: 69%;
 }
 
 .font-18 {
@@ -102,6 +178,10 @@ h1 {
 
 .font-light {
     font-weight: 300;
+}
+
+.font-bold {
+    font-weight: bold;
 }
 
 .font-montserrat {
@@ -120,10 +200,6 @@ h1 {
     letter-spacing: -0.03em;
 }
 
-.center {
-    text-align: center;
-}
-
 .fixed {
     position: fixed;
 }
@@ -138,6 +214,7 @@ h1 {
     left: 0px;
     top: 0px;
     background: #56BE7D;
+    z-index: 999;
 }
 
 .header-right,
@@ -168,6 +245,129 @@ ul.header-links>li {
 .content {
     margin-top: 80px;
     width: 100%;
+    max-width: 100%;
     left: 0;
     top: 0;
+    overflow-x: hidden;
+}
+
+#agenda {
+    padding-right: 0;
+}
+
+#right-bg-code {
+    top: 80px;
+    right: 0;
+    z-index: -999;
+    width: 410px;
+    height: 1219px;
+    position: absolute;
+}
+
+#right-bg-code>div {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#right-bg-code>div::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -2%;
+    left: 37%;
+    z-index: -1;
+    background: url(../images/binary-code.png);
+    transform: rotate(12.39deg);
+}
+
+.left-bg-code {
+    position: absolute;
+    top: -245;
+    left: -550;
+    z-index: -999;
+    transform: rotate(27.86deg);
+}
+
+.logo {
+    position: absolute;
+    top: 260;
+    left: 75;
+    z-index: -999;
+}
+
+.stage {
+    height: 320px;
+    padding: 37px 66px;
+    border: 2px solid #70C690;
+    border-radius: 10px;
+    width: calc(100% - 256px);
+    margin-right: 25px;
+}
+
+.flickity-page-dots {
+    right: 300px;
+    width: auto;
+}
+
+.flickity-page-dots .is-selected {
+    background: #70C690;
+}
+
+.flickity-prev-next-button {
+    width: 100px;
+    background: none;
+    top: auto;
+    bottom: -64px;
+    border-radius: auto;
+}
+
+.flickity-prev-next-button:hover {
+    background: none;
+}
+
+.flickity-prev-next-button.next {
+    right: 120px;
+}
+
+.flickity-prev-next-button.previous {
+    right: 580px;
+    left: auto;
+}
+
+.flickity-prev-next-button .flickity-button-icon {
+    width: 120%;
+}
+
+#faq,
+#why-java {
+    position: relative;
+}
+
+#faq {
+    background: #FFF8EB;
+    border-radius: 0px 90px 90px 90px;
+}
+
+#code-ellipse {
+    position: absolute;
+    right: 0;
+    z-index: -999;
+    top: -240px;
+}
+
+#binary-code-left {
+    position: absolute;
+    z-index: -999;
+    left: -360;
+    top: -265;
+}
+
+#code-ellipse-small {
+    position: absolute;
+    z-index: -999;
+    left: 0;
+    top: -225;
 }
