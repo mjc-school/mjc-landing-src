@@ -14,6 +14,7 @@ h1 {
     font-size: 60px;
     line-height: 74px;
     font-weight: 300;
+    letter-spacing: -0.03em;
 }
 
 h2 {
@@ -40,6 +41,7 @@ h4 {
     cursor: pointer;
     text-decoration: none;
     line-height: 60px;
+    text-align: center;
 }
 
 .button-sm {
@@ -60,7 +62,7 @@ h4 {
 
 .card {
     background: #FFF8EB;
-    padding: 34px 47px;
+    padding: 30px 40px;
     border-radius: 12px;
     display: flex;
     flex-flow: column;
@@ -110,44 +112,52 @@ h4 {
     margin: 0
 }
 
-.mt-10 {
+.mt-xs {
     margin-top: 10px;
 }
 
-.mt-25 {
+.mt-s {
     margin-top: 25px;
 }
 
-.mt-45 {
-    margin-top: 45px;
+.mb-xs {
+    margin-bottom: 10px;
 }
 
-.mt-80 {
+.mb-s {
+    margin-bottom: 25px;
+}
+
+.mb-m {
+    margin-bottom: 45px;
+}
+
+.mb-l {
+    margin-bottom: 90px;
+}
+
+.mb-xl {
+    margin-bottom: 135px;
+}
+
+.mb-xxl {
+    margin-bottom: 180px;
+}
+
+.mt-wider {
     margin-top: 80px;
 }
 
-.mt-110 {
-    margin-top: 110px;
-}
-
-.mt-180 {
+.mt-wide {
     margin-top: 180px;
 }
 
-.ml-25 {
+.ml-s {
     margin-left: 25px;
 }
 
 .ml-50p {
     margin-left: 50%;
-}
-
-.ml-400 {
-    margin-left: 400px;
-}
-
-.ml-210 {
-    margin-left: 210px;
 }
 
 .w-30 {
@@ -176,6 +186,10 @@ h4 {
 
 .w-70 {
     width: 69%;
+}
+
+.w-100 {
+    width: 100%;
 }
 
 .font-18 {
@@ -214,6 +228,18 @@ h4 {
     position: fixed;
 }
 
+p.paragraph, b.paragraph {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 34.2px;
+    margin-top: 0;
+}
+
+.paragraph-sm {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: normal;
+}
 
 /* HEADER */
 
@@ -259,11 +285,20 @@ ul.header-links>li {
     position: relative;
 
     margin-top: 80px;
+    padding-top: 45px;
     width: 100%;
     max-width: 100%;
     left: 0;
     top: 0;
     overflow-x: hidden;
+}
+
+#title, #description {
+    margin-left: 400px;
+}
+
+#title > h1:last-child {
+    margin-left: 210px;
 }
 
 #right-bg-code {
@@ -295,7 +330,7 @@ ul.header-links>li {
 }
 
 .stage {
-    height: 320px;
+    height: 520px;
     padding: 37px 66px;
     border: 2px solid #70C690;
     border-radius: 10px;
@@ -345,6 +380,7 @@ ul.header-links>li {
 #faq {
     background: #FFF8EB;
     border-radius: 0px 90px 90px 90px;
+    padding-top: 45px;
 }
 
 #agenda {
@@ -386,4 +422,115 @@ ul.header-links>li {
     z-index: -999;
     left: 0;
     top: 2050;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+    .rows {
+        flex-flow: column;
+    }
+
+    .ff-sm-reverse {
+        flex-flow: column-reverse;
+    }
+
+    .ml-s {
+        margin-left: 0;
+    }
+
+    .mb-xxl {
+        margin-bottom: 90px;
+    }
+
+    .paragraph {
+        margin-left: 0;
+        width: 100%;
+        text-align: justify;
+    }
+
+    p.paragraph, b.paragraph {
+        font-size: 32px;
+    }
+
+    p.paragraph-sm {
+        font-size: 30px;
+    }
+
+    .card {
+        display: block;
+    }
+
+    .card > h4 {
+        margin-bottom: 25px;
+    }
+
+    .card.f-align-center {
+        align-items: baseline;
+    }
+
+    .stage {
+        padding: 10px 15px;
+        width: calc(100% - 144px);
+        height: 840px;
+        justify-content: center;
+    }
+
+    .details {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .details > .rows {
+        padding-right: 10px;
+        justify-content: space-between;
+    }
+
+    .stage h4 {
+        font-size: 40px;
+    }
+
+    .stage .paragraph {
+        margin-bottom: 0px;
+    }
+
+    .w-30 {
+        width: 100%;
+    }
+
+    .w-50 {
+        width: 100%;
+    }
+
+    .w-70 {
+        width: 100%;
+    }
+
+    #title {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #title > h1:last-child, #description {
+        margin-left: 0;
+    }
+
+    #logo {
+        position: sticky;
+        top: 0;
+        left: 20%;
+        width: 60%;
+        margin-bottom: 45px;
+    }
+
+    #carousel {
+        padding-left: 114px;
+    }
+
+    #code-left, #code-ellipse-small, #code-ellipse {
+        display: none;
+    }
+
+    #code-rectangle {
+        margin-bottom: 90px;
+    }
 }
