@@ -82,9 +82,9 @@ h4 {
     padding: 0px 120px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 2560px) {
     .section {
-        max-width: 1200px;
+        max-width: 2560px;
     }
 }
 
@@ -164,6 +164,10 @@ h4 {
 
 .ml-s {
     margin-left: 25px;
+}
+
+.ml-20p {
+    margin-left: 20%;
 }
 
 .ml-50p {
@@ -278,6 +282,22 @@ ul.header-links>li {
     font-size: 20px;
 }
 
+ul.header-links>li>a, .contact {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact {
+    margin: 0 20px 20px 20px;
+    display: inline-grid;
+    text-align: center;
+    font-size: 1vmax;
+}
+
+.contact>i {
+    margin-bottom: 10px;
+}
+
 .header-content {
     display: flex;
     align-items: center;
@@ -304,12 +324,25 @@ ul.header-links>li {
     overflow-x: hidden;
 }
 
-#title, #description {
-    margin-left: 400px;
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #title {
+        padding-left: 50%;
+    }
+    #description {
+        width: 100%;
+    }
 }
 
-#title > h1:last-child {
-    margin-left: 210px;
+@media screen and (min-device-width: 1024px) {
+    #title {
+        padding-left: 400px;
+    }
+}
+
+@media screen and (max-device-width: 425px) {
+    #title>.ml-20p {
+        margin-left: 0;
+    }
 }
 
 #right-bg-code {
@@ -398,6 +431,31 @@ ul.header-links>li {
     width: 100%;
 }
 
+#carousel {
+    padding-left: 120px;
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1023px)  {
+    #carousel {
+        padding-left: 55px;
+    }
+
+    .stage {
+        width: calc(100% - 185px);
+    }
+
+}
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1439px) {
+    #carousel {
+        padding-left: 80px;
+    }
+
+    .stage {
+        width: calc(100% - 214px);
+    }
+}
+
 #logo {
     position: absolute;
     top: 240px;
@@ -409,7 +467,7 @@ ul.header-links>li {
     position: absolute;
     right: 0;
     z-index: -999;
-    top: 3700px;
+    top: -240px;
 }
 
 #code-left {
@@ -423,16 +481,27 @@ ul.header-links>li {
 #binary-code-left {
     position: absolute;
     z-index: -999;
-    left: -360;
-    top: 2700;
-    transform: scaleX(-1) rotate(12.39deg);
+    left: -30%;
+    top: -275px;
+}
+
+@media screen and (max-device-width: 1024px) {
+    #binary-code-left {
+        left:-50%;
+    }
+}
+
+@media screen and (min-device-width: 2560px) {
+    #binary-code-left {
+        left:-15%;
+    }
 }
 
 #code-ellipse-small {
     position: absolute;
     z-index: -999;
     left: 0;
-    top: 2650;
+    top: -250;
 }
 
 @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -572,12 +641,16 @@ ul.header-links>li {
         padding-left: 60px;
     }
 
-    #code-left, #code-ellipse-small, #code-ellipse {
+    #code-left, #code-ellipse-small, #code-ellipse, #binary-code-left {
         display: none;
     }
 
     #code-rectangle {
         width: 100%;
         margin-bottom: 90px;
+    }
+
+    #contacts > .rows:last-child {
+        flex-flow: row;
     }
 }

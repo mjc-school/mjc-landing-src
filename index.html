@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Roboto+Mono:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/flickity.css" media="screen">
     <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -20,13 +21,13 @@
             </div>
             <div class="header-right">
                 <ul class="header-links">
-                    <li>About the school</li>
-                    <li>Course agenda</li>
-                    <li>About Java</li>
-                    <li>FAQ</li>
-                    <li>Contact us</li>
+                    <li><a href="#about-the-school">About the school</a></li>
+                    <li><a href="#agenda">Course agenda</a></li>
+                    <li><a href="#why-java">About Java</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contacts">Contact us</a></li>
                 </ul>
-                <a class="button button-violet button-sm" href="#">
+                <a class="button button-violet button-sm" href="https://join.slack.com/t/mjc-r0o8608/shared_invite/zt-19dbjp0wh-trLwtW2~WPW5LBdF2lNFJg" target="_blank">
                     Join
                 </a>
             </div>
@@ -40,15 +41,13 @@
             <div></div>
         </div>
 
-        <div id="about-the-school" class="section columns f-between">
+        <div id="about-the-school" class="section columns f-between f-align-center">
 
-            <div id="title" class="mb-m">
+            <div id="title" class="mb-l">
                 <h1>MJC School -</h1>
-                <h1>We Learn Java</h1>
-            </div>
+                <h1 class="mb-m ml-20p">We Learn Java</h1>
 
-            <div id="description" class="lh-40 w-50 ls-lower mb-xxl roboto">
-                <p class="paragraph mb-0">
+                <p id="description" class="paragraph mb-0 lh-40 w-70 ls-lower mb-xxl roboto">
                     Educational environment for Engineers, students, and Java enthusiasts to deliver top-notch discipline standards and create knowledge-sharing culture.
                 </p>
             </div>
@@ -65,7 +64,7 @@
             </div>
 
             <div class="rows f-center mb-l">
-                <a href="#" class="button button-green button-lemon-shadow">start learning</a>
+                <a href="https://autocode-next.lab.epam.com/courses/189" target="_blank" class="button button-green button-lemon-shadow">start learning</a>
             </div>
 
             <div class="rows f-center f-align-center mb-m">
@@ -254,13 +253,12 @@
             </div>
         </div>
 
-        <img id="binary-code-left" src="assets/images/binary-code.png" />
-        <img id="code-ellipse-small" src="assets/images/code-ellipse-small.png" />
-
         <div id="why-java" class="section columns f-align-center">
+            <img id="binary-code-left" src="assets/images/binary-code.png" />
+            <img id="code-ellipse-small" src="assets/images/code-ellipse-small.png" />
 
             <div class="rows f-center mb-l w-100">
-                <a href="#" class="button button-violet button-lemon-shadow">join the course</a>
+                <a href="https://autocode-next.lab.epam.com/courses/189" target="_blank" class="button button-violet button-lemon-shadow">join the course</a>
             </div>
 
             <div class="rows f-center mb-xs">
@@ -279,9 +277,8 @@
             </div>
         </div>
 
-        <img id="code-ellipse" src="assets/images/code-ellipse.png" />
-
-        <div id="faq" class="section columns">
+        <div id="faq" class="section columns mb-l">
+            <img id="code-ellipse" src="assets/images/code-ellipse.png" />
 
             <div class="rows f-center f-align-center mb-m">
                 <h2 class="text-center">
@@ -329,6 +326,39 @@
                         </p>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div id="contacts" class="section columns">
+            <div class="rows f-center f-align-center mb-m">
+                <h2 class="text-center">
+                    Contacts
+                </h2>
+            </div>
+
+            <p class="paragraph text-center">Follow us on social media and discover more!</p>
+
+            <div class="rows f-center">
+                <a href="https://www.linkedin.com/groups/12668113/" target="_blank" class="contact">
+                    <i class="fa fa-linkedin-square" style="font-size:64px"></i>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/mjc-school/MJC-School" target="_blank" class="contact">
+                    <i class="fa fa-github-square" style="font-size:64px"></i>
+                    GitHub
+                </a>
+                <a href="mailto:OrgMJCSchool@epam.com" target="_blank" class="contact">
+                    <i class="fa fa-envelope" style="font-size:64px"></i>
+                    e-Mail
+                </a>
+                <a href="https://join.slack.com/t/mjc-r0o8608/shared_invite/zt-19dbjp0wh-trLwtW2~WPW5LBdF2lNFJg" target="_blank" class="contact">
+                    <i class="fa fa-slack" style="font-size:64px"></i>
+                    Slack Chat
+                </a>
+                <a href="https://autocode-next.lab.epam.com/courses/189" target="_blank" class="contact">
+                    <i class="fa fa-code" style="font-size:64px"></i>
+                    AutoCode
+                </a>
             </div>
         </div>
     </div>
