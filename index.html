@@ -1,383 +1,453 @@
-<html>
-
+<!doctype html>
+<html class="no-js" lang="en">
 <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
     <title>MJC School</title>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Roboto+Mono:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation-prototype.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/flickity.css" media="screen">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="css/orbit.css">
+    <link rel="stylesheet" href="css/styles.css">
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
 </head>
-
 <body>
-    <div class="header">
-        <div class="header-content">
-            <div>
-                <img src="assets/images/logo-header.png " />
+    <div data-sticky-container>
+        <div class="title-bar" data-responsive-toggle="responsive-menu" data-margin-top="0" data-hide-for="medium">
+            <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+            <div class="title-bar-title">Menu</div>
+        </div>
+        <div class="top-bar sticky" id="responsive-menu" data-sticky data-margin-top="0">
+            <div class="top-bar-left">
+                <img src="assets/images/logo-header.png">
             </div>
-            <div class="header-right">
-                <ul class="header-links">
-                    <li><a href="#about-the-school">About the school</a></li>
-                    <li><a href="#agenda">Course agenda</a></li>
-                    <li><a href="#why-java">About Java</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contacts">Contact us</a></li>
-                </ul>
+            <div class="top-bar-right">
+              <ul class="menu" data-smooth-scroll data-offset="80">
+                <li><a href="#about-the-school">About the school</a></li>
+                <li><a href="#agenda">Course agenda</a></li>
+                <li><a href="#why-java">About Java</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contacts">Contact us</a></li>
+              </ul>
             </div>
         </div>
     </div>
-    <div class="content">
-        <img src="assets/images/code-rectangle-big.png" id="code-left" />
-        <img src="assets/images/logo.png" id="logo" />
+    <div class="container">
+        <img id="code-left" src="assets/images/code-rectangle-big.png" />
+        <img id="logo" src="assets/images/logo.png" />
+        <img id="code-right" src="assets/images/binary-code.png"/>
 
-        <div id="right-bg-code">
-            <div></div>
-        </div>
-
-        <div id="about-the-school" class="section columns f-between f-align-center">
-
-            <div id="title" class="mb-l">
-                <h1>MJC School -</h1>
-                <h1 class="ml-20p mb-m">
-                    We Learn Java
-                </h1>
-                
-                <p id="description" class="paragraph mb-0 lh-40 w-70 ls-lower mb-xxl roboto">
-                    Educational environment for Engineers, students, and Java enthusiasts to deliver top-notch discipline standards and create knowledge-sharing culture.
-                </p>
-            </div>
-
-            <div class="ff-sm-reverse rows f-between">
-                <p class="w-50 paragraph mb-s">MJC School was created by Engineers for Engineers. That makes us think that the content and the processes are as close as possible to meet the requirements of modern projects.</p>
-                <div class="w-50 paragraph">
-                    <img id="code-rectangle" src="assets/images/code-rectangle.png">
+        <div id="about-the-school" class="grid-x grid-padding-y">
+            <div class="cell medium-12 large-12">
+                <div class="grid-x text-center">
+                    <div class="cell large-12"><h1>MJC School -</h1></div>
+                    <div class="cell large-10 large-offset-2"><h1>We Learn Java</h1></div>
                 </div>
             </div>
-            <div class="rows f-between mb-m">
-                <p class="w-50 paragraph">At the same time, community school is the key to help to attract new members by helping all the participants to grow. This is a great chance to become a member of a wide family of Java Engineers.</p>
-                <p class="w-50 paragraph">Our school was made on top of other communities' experience with some innovative ideas from our Engineers. Learn Java with us and become a Junior Software Engineer.</p>
+
+            <div class="cell section medium-12 large-7 large-offset-3">
+                <p class="big">Educational environment for Engineers, students, and Java enthusiasts to deliver top-notch discipline standards and create knowledge-sharing culture.</p>
             </div>
 
-            <div class="rows f-center mb-l w-100">
-                <a href="https://autocode-next.lab.epam.com/courses/189" target="_blank" class="button button-green button-lemon-shadow">join the course</a>
+            <div class="cell small-12 large-12">
+                <div class="grid-x align-right">
+                    <div class="cell small-4">
+                        <img id="code-rectangle" src="assets/images/code-rectangle-new.png" width="100%">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="section grid-x grid-padding-y align-middle align-center">
+                <div class="cell medium-12 large-4">
+                    <p>MJC School was created by Engineers for Engineers. We give you the skills to meet the requirements of modern projects and a chance to become a member of a wide family of Java Engineers.</p>
+                </div>
+                <div class="cell small-12 large-4 large-offset-1">
+                    <p>Let's grow and innovate together! Learn Java with us and become a Junior Software Engineer. </p>
+                </div>
             </div>
 
-            <div class="rows f-center f-align-center mb-m">
+            <div class="section cell large-12 grid-x align-center">
+                <div class="cell large-3">
+                    <a href="https://autocode-next.lab.epam.com/courses/189" target="_blank" class="expanded button">join the course</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="announcement" class="grid-x align-center align-bottom margin-top-3">
+
+            <div class="cell large-3 ">
+                <img id="announcement-cells-left" src="assets/images/announcement-cells-left.png"/>
+                <img id="announcement-logo" src="assets/images/logo.png" class="cell align-self-bottom" />
+            </div>
+            <div class="cell large-6 text-center">
+                <p class="biggest text-green text-center">MJC School Open Day</p>
+                <p class="bigger text-white text-center">FIND OUT HOW TO BUILD YOUR JAVA CAREER</p>
+                <h2 class="text-green text-center">21 JUNE ǀ 17:00 EEST ǀ ONLINE</h2>
+                <a href="https://wearecommunity.io/events/mjc-school-open-day" target="_blank" class="margin-top-2 margin-bottom-2 padding-left-3 padding-right-3 button violet">learn more and join</a>
+            </div>
+            <div class="cell large-3 align-self-top text-right">
+                <img id="announcement-epam-logo" src="assets/images/EPAM_LOGO_White.png"/>
+                <img id="announcement-cells-right" src="assets/images/announcement-cells-right.png"/>
+            </div>
+        </div>
+
+        <div id="benefits" class="grid-x section margin-top-3">
+            <div class="cell large-12">
                 <h2>MJC School: Benefits</h2>
             </div>
 
-            <div id="benefits" class="columns f-between mb-l">
-                <div class="rows">
-                    <div class="columns f-between">
-                        <div class="card card-green mb-s">
-                            <h4 class="mb-s">ONLINE EDUCATION</h4>
-                            <p class="paragraph m-0">Education is online, available from any location!</p>
-                        </div>
-                        <div class="card card-lemon mb-s">
-                            <h4 class="mb-s">FREE FOR EVERYONE</h4>
-                            <p class="paragraph m-0">Education is free of charge. Everyone can join, all you need are basic programming skills.</p>
-                        </div>
-                    </div>
-                    <div class="grid f-between ml-s">
-                        <div class="rows card card-lemon f-align-center mb-s">
-                            <h4>EXPERIENCED MENTORS</h4>
-                            <p class="paragraph m-0">Course is created and maintained by real professionals who work with Java on a daily basis. </p>
-                        </div>
-                        <div class="rows f-between">
-                            <div class="card card-green f-between mb-s">
-                                <h4 class="mb-s">PRODUCTION MENTORING</h4>
-                                <p class="paragraph m-0">During the Stage 4 you'll get into individual mentoring where production engineers will help you to cover with advanced education program!</p>
+            <div class="cell grid-y mt-md">
+                <div class="cell grid-x pb-10" >
+                    <div class="cell grid-y large-4">
+                        <div class="cell large-5 pb-10 pr-10">
+                            <div class="cell benefit-card benefit-card-green align-justify grid-y">
+                                <h4>ONLINE EDUCATION</h4>
+                                <p class="no-mg">Education is online, available from any location!</p>
                             </div>
-                            <div class="card card-lemon ml-s mb-s">
-                                <h4 class="mb-s">PROFESSIONAL OPPORTUNITIES</h4>
-                                <p class="paragraph m-0">The course gives sufficient knowledge to join a company as a Junior Software Developer.</p>
+                        </div>
+                        <div class="cell large-7 grid-y pt-10 pr-10">
+                            <div class="cell large-12 benefit-card benefit-card-yellow align-justify grid-y">
+                                <h4>FREE FOR EVERYONE</h4>
+                                <p class="no-mg">Education is free of charge. Everyone can join, all you need are basic programming skills.</p>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="rows card card-green f-align-center">
-                    <h4>COMMUNITY SUPPORT</h4>
-                    <p class="paragraph m-0">Community - is not only about school! Subscribe to our channels, join chats and stay informed about all the upcoming events!</p>
-                </div>
-            </div>
-        </div>
-
-        <div id="agenda" class="section columns f-between">
-
-            <div class="rows f-center f-align-center mb-m">
-                <h2 class="ls-lower">Course Agenda</h2>
-            </div>
-
-            <div id="carousel" class="mb-l js-flickity" data-flickity-options='{"wrapAround": false, "cellAlign": "left", "setGallerySize": true, "arrowShape": "M 0 50 L 25 75 L 32 67 L 20 55 L 350 55 L 350 45 L 20 45 L 32 32 L 25 25 Z"}'>
-                <div class="stage rows f-between ">
-                    <div class="w-30 mb-s">
-                        <h4 class="font-light ">STAGE 0</h4>
-                        <b><h4>FUNDAMENTALS</h4></b>
-                    </div>
-                    <div class="w-70 columns f-between">
-                        <p class="paragraph m-0">An introductory stage to get acquainted with computer science and Java basics. You should have initial computer science knowledge. If you don't, please pass this course.</p>
-                        <div class="details mt-s">
-                            <div class="rows mt-xs ">
-                                <p class="w-40 m-0"><b class="paragraph">Estimated Duration:</b></p>
-                                <p class="w-60 paragraph-sm m-0">2 Months</p>
+                    <div class="cell grid-y large-8 align-justify">
+                        <div class="cell pl-10 pb-10 flex-child-grow">
+                            <div class="cell grid-x benefit-card benefit-card-yellow height-100">
+                                <h4 class="cell large-5 align-self-middle">EXPERIENCED MENTORS</h4>
+                                <p class="cell large-7 align-self-middle no-mg">Course is created and maintained by real professionals who work with Java on a daily basis.</p>
                             </div>
-                            <div class="rows mt-xs ">
-                                <p class="w-40 m-0"><b class="paragraph">Format:</b></p>
-                                <p class="w-60 paragraph-sm m-0">Self-paced, Online, Practical Tasks </p>
-                            </div>
-                            <div class="rows mt-xs ">
-                                <p class="w-40 m-0"><b class="paragraph">Program:</b></p>
-                                <p class="w-60 paragraph-sm m-0">Computer science course, Infrastructure & Environment, JDK, JRE, Git Basics, IDE, Junit Concepts, Java Lang Syntax, Java Fundamentals, Algorithms and Data Structures, OOP/OOD Fundamentals </p>
-                            </div>
-                            <div class="rows mt-xs ">
-                                <p class="w-40 m-0"><b class="paragraph">Result:</b></p>
-                                <p class="w-60 paragraph-sm m-0">After stage 0 you will be able to develop simple console Java applications.</p>
+                        </div>
+                        <div class="cell pl-10 pt-10">
+                            <div class="cell grid-x">
+                                <div class="cell large-7 grid-x pr-10">
+                                    <div class="cell benefit-card benefit-card-green grid-y align-justify">
+                                        <h4>PRODUCTION MENTORING</h4>
+                                        <p class="no-mg">During the Stage 4 you'll get into individual mentoring where production engineers will help you to cover with advanced education program!</p>
+                                    </div>
+                                </div>
+                                <div class="cell large-5 grid-x pl-10">
+                                    <div class="cell benefit-card benefit-card-yellow grid-y align-justify">
+                                        <h4>PROFESSIONAL OPPORTUNITIES</h4>
+                                        <p class="no-mg">The course gives sufficient knowledge to join a company as a Junior Software Developer.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="stage rows f-between ">
-                    <div class="w-30 mb-s">
-                        <h4 class="font-light ">STAGE 1</h4>
-                        <b><h4>CORE</h4></b>
-                    </div>
-                    <div class="w-70 columns f-between ">
-                        <p class="paragraph m-0 ">The stage to get acquainted with core mechanisms and tools Java provide to solve various tasks.</p>
-                        <div class="details mt-s">
-                            <div class="rows mt-xs ">
-                                <p class="w-40 m-0"><b class="paragraph">Estimated Duration:</b></p>
-                                <p class="w-60 paragraph-sm m-0">2 Months</p>
-                            </div>
-                            <div class="rows mt-xs ">
-                                <p class="w-40 m-0"><b class="paragraph">Format:</b></p>
-                                <p class="w-60 paragraph-sm m-0">Self-paced, Online, Practical Tasks </p>
-                            </div>
-                            <div class="rows mt-xs ">
-                                <p class="w-40 m-0"><b class="paragraph">Program:</b></p>
-                                <p class="w-60 paragraph-sm m-0">Exceptions, Strings, Generics, Collections, Stream API, Java I/O, NIO, Data Formats (JSON, XML, YML), Concurrency</p>
-                            </div>
-                            <div class="rows mt-xs ">
-                                <p class="w-40 m-0"><b class="paragraph">Result:</b></p>
-                                <p class="w-60 paragraph-sm m-0">After this stage, you will understand the Java Core and will be able to develop more complex applications.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="stage rows f-between ">
-                    <div class="w-30 mb-s">
-                        <h4 class="font-light ">STAGE 2</h4>
-                        <b><h4>WEB</h4></b>
-                    </div>
-                    <div class="w-70 columns f-between ">
-                        <p class="paragraph m-0 ">The stage to get acquainted with Web applications and Web itself.</p>
-                        <div class="details mt-s">
-                            <div class="rows mt-xs ">
-                                <p class="w-40 m-0"><b class="paragraph">Estimated Duration:</b></p>
-                                <p class="w-60 paragraph-sm m-0">1 Month</p>
-                            </div>
-                            <div class="rows mt-xs ">
-                                <p class="w-40 m-0"><b class="paragraph">Format:</b></p>
-                                <p class="w-60 paragraph-sm m-0">Self-paced, Online, Practical Tasks </p>
-                            </div>
-                            <div class="rows mt-xs ">
-                                <p class="w-40 m-0"><b class="paragraph">Program:</b></p>
-                                <p class="w-60 paragraph-sm m-0">Git & Build Tools, Web, HTTP(s) methods, Java EE Servlets, SQL, Architecture basics, Architectural patterns, Engineering Best-practices</p>
-                            </div>
-                            <div class="rows mt-xs ">
-                                <p class="w-40 m-0"><b class="paragraph">Result:</b></p>
-                                <p class="w-60 paragraph-sm m-0">After this stage, you will be able to develop web applications in Java using Servlets technology, use build and version control tools</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="stage rows f-between ">
-                    <div class="w-30 mb-s">
-                        <h4 class="font-light ">STAGE 3</h4>
-                        <b><h4>MODERN FRAMEWORKS</h4></b>
-                    </div>
-                    <div class="w-70 columns f-between ">
-                        <p class="paragraph m-0 ">The stage to get acquainted with modern frameworks and development approaches and techniques.</p>
-                        <div class="details mt-s">
-                            <div class="rows mt-xs ">
-                                <p class="w-40 m-0"><b class="paragraph">Estimated Duration:</b></p>
-                                <p class="w-60 paragraph-sm m-0">2 Months</p>
-                            </div>
-                            <div class="rows mt-xs ">
-                                <p class="w-40 m-0"><b class="paragraph">Format:</b></p>
-                                <p class="w-60 paragraph-sm m-0">Self-paced, Online, Light Talks, Practical Tasks, Roasting Battles, Consultants</p>
-                            </div>
-                            <div class="rows mt-xs ">
-                                <p class="w-40 m-0"><b class="paragraph">Program:</b></p>
-                                <p class="w-60 paragraph-sm m-0">Architecture advanced, ORM - JPA, Hibernate, Spring Core, REST Basics – Spring Web, Swagger</p>
-                            </div>
-                            <div class="rows mt-xs ">
-                                <p class="w-40 m-0"><b class="paragraph">Result:</b></p>
-                                <p class="w-60 paragraph-sm m-0">After this stage, you will be able to develop web applications in Java utilizing modern frameworks and libraries.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="stage rows f-between ">
-                    <div class="w-30 mb-s">
-                        <h4 class="font-light ">STAGE 4</h4>
-                        <b><h4>ENTERPRISE</h4></b>
-                    </div>
-                    <div class="w-70 columns f-between ">
-                        <p class="paragraph m-0 ">The stage to dive into frameworks and modern engineering practices.</p>
-                        <div class="details mt-s">
-                            <div class="rows mt-xs ">
-                                <p class="w-40 m-0"><b class="paragraph">Estimated Duration:</b></p>
-                                <p class="w-60 paragraph-sm m-0">2 Months</p>
-                            </div>
-                            <div class="rows mt-xs ">
-                                <p class="w-40 m-0"><b class="paragraph">Format:</b></p>
-                                <p class="w-60 paragraph-sm m-0">Online, Light Talks, Practical Tasks, Roasting Battles, Mentoring</p>
-                            </div>
-                            <div class="rows mt-xs ">
-                                <p class="w-40 m-0"><b class="paragraph">Program:</b></p>
-                                <p class="w-60 paragraph-sm m-0">CI\CD, REST Advanced, Spring Boot, Authentication & Authorization, Spring Security, Modern UI, AWS, Spring Data</p>
-                            </div>
-                            <div class="rows mt-xs ">
-                                <p class="w-40 m-0"><b class="paragraph">Result:</b></p>
-                                <p class="w-60 paragraph-sm m-0">After this stage, you will be able to deploy your application to the Cloud, configure authentication and develop a UI for your app.</p>
-                            </div>
+                <div class="cell pt-10">
+                    <div class="grid-x benefit-card benefit-card-green align-middle">
+                        <h4 class="cell large-3">COMMUNITY SUPPORT</h4>
+                        <p class="cell large-5 no-mg">Community - is not only about school! Subscribe to <a href="https://www.linkedin.com/groups/12668113/" target="_blank">our channels</a>, join <a href="https://join.slack.com/t/mjc-r0o8608/shared_invite/zt-19dbjp0wh-trLwtW2~WPW5LBdF2lNFJg" targer="_blank">chats</a> and stay informed about all the upcoming events!</p>
+                        <div class="cell large-4 grid-x align-center">
+                            <a href="https://www.linkedin.com/groups/12668113/" target="_blank">
+                                <i class="fa fa-linkedin-square icon-sm"></i>
+                            </a>
+                            <a href="https://github.com/mjc-school/MJC-School" target="_blank">
+                                <i class="fa fa-github-square icon-sm"></i>
+                            </a>
+                            <a href="mailto:OrgMJCSchool@epam.com" target="_blank">
+                                <i class="fa fa-envelope icon-sm"></i>
+                            </a>
+                            <a href="https://join.slack.com/t/mjc-r0o8608/shared_invite/zt-19dbjp0wh-trLwtW2~WPW5LBdF2lNFJg" target="_blank">
+                                <i class="fa fa-slack icon-sm"></i>
+                            </a>
+                            <a href="https://autocode-next.lab.epam.com/courses/189" target="_blank">
+                                <i class="fa fa-code icon-sm"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="why-java" class="section columns f-align-center">
-            <img id="binary-code-left" src="assets/images/binary-code.png" />
-            <img id="code-ellipse-small" src="assets/images/code-ellipse-small.png" />
+        <div id="agenda" class="grid-x  margin-top-3">
+            <img id="code-ellipse" src="assets/images/code-ellipse-small.png">
 
-            <div class="columns f-center mb-m w-50">
-                <p class="paragraph text-center">
-                    If you would like to start your journey on a later stages, please leave a short messages in our <a href="https://join.slack.com/t/mjc-r0o8608/shared_invite/zt-19dbjp0wh-trLwtW2~WPW5LBdF2lNFJg" target="_blank">slack chat</a>, so that we can reach out to you and share details.
+            <div class="cell large-12 section">
+                <h2>Course Agenda</h2>
+            </div>
+
+            <div class="cell large-12 orbit mt-md" >
+                <div>
+                    <nav class="bullets section grid-x grid-margin-x">
+                        <button class="cell large-auto is-active" onclick="$('.js-flickity').flickity().flickity('select', 0); $('.bullets button').removeClass('is-active'); $(event.target).addClass('is-active');">
+                            stage 0
+                        </button>
+                        <button class="cell large-auto" onclick="$('.js-flickity').flickity().flickity('select', 1); $('.bullets button').removeClass('is-active'); $(event.target).addClass('is-active');">
+                            stage 1
+                        </button>
+                        <button class="cell large-auto" onclick="$('.js-flickity').flickity().flickity('select', 2); $('.bullets button').removeClass('is-active'); $(event.target).addClass('is-active');">
+                            stage 2
+                        </button>
+                        <button class="cell large-auto" onclick="$('.js-flickity').flickity().flickity('select', 3); $('.bullets button').removeClass('is-active'); $(event.target).addClass('is-active');">
+                            stage 3
+                        </button>
+                        <button class="cell large-auto" onclick="$('.js-flickity').flickity().flickity('select', 4); $('.bullets button').removeClass('is-active'); $(event.target).addClass('is-active');">
+                            stage 4
+                        </button>
+                    </nav>
+
+                    <div class="mb-l js-flickity section-left" data-flickity-options='{"wrapAround": false, "cellAlign": "left", "setGallerySize": true, "arrowShape": "M 0 50 L 25 75 L 32 67 L 20 55 L 350 55 L 350 45 L 20 45 L 32 32 L 25 25 Z"}'>
+                        <div class="stage grid-x">
+                            <div class="cell large-4">
+                                <h4>STAGE 0</h4>
+                                <b><h3>FUNDAMENTALS</h3></b>
+                            </div>
+                            <div class="cell large-8 grid-x grid-margin-y">
+                                <p style="margin: 0">An introductory stage to get acquainted with computer science and Java basics. You should have initial computer science knowledge. If you don't, please pass this course.</p>
+                                <div class="cell grid-x align-self-bottom">
+                                    <div class="cell large-4 "><b>Estimated Duration:</b></div>
+                                    <div class="cell large-8">2 Months</div>
+                                </div>
+                                <div class="cell grid-x align-self-bottom">
+                                    <div class="cell large-4"><b>Format:</b></div>
+                                    <div class="cell large-8">Self-paced, Online, Practical Tasks</div>
+                                </div>
+                                <div class="cell grid-x align-self-bottom">
+                                    <div class="cell large-4"><b>Program:</b></div>
+                                    <div class="cell large-8">Computer science course, Infrastructure & Environment, JDK, JRE, Git Basics, IDE, Junit Concepts, Java Lang Syntax, Java Fundamentals, Algorithms and Data Structures, OOP/OOD Fundamentals</div>
+                                </div>
+                                <div class="cell grid-x align-self-bottom">
+                                    <div class="cell large-4"><b>Result:</b></div>
+                                    <div class="cell large-8">After stage 0 you will be able to develop simple console Java applications.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stage grid-x">
+                            <div class="cell large-4">
+                                <h4>STAGE 1</h4>
+                                <b><h3>CORE</h3></b>
+                            </div>
+                            <div class="cell large-8 grid-x grid-margin-y">
+                                <p style="margin: 0">The stage to get acquainted with core mechanisms and tools Java provide to solve various tasks.</p>
+                                <div class="cell grid-x align-self-bottom">
+                                    <div class="cell large-4"><b>Estimated Duration:</b></div>
+                                    <div class="cell large-8">2 Months</div>
+                                </div>
+                                <div class="cell grid-x align-self-bottom">
+                                    <div class="cell large-4"><b>Format:</b></div>
+                                    <div class="cell large-8">Self-paced, Online, Practical Tasks</div>
+                                </div>
+                                <div class="cell grid-x align-self-bottom">
+                                    <div class="cell large-4"><b>Program:</b></div>
+                                    <div class="cell large-8">Exceptions, Strings, Generics, Collections, Stream API, Java I/O, NIO, Data Formats (JSON, XML, YML), Concurrency</div>
+                                </div>
+                                <div class="cell grid-x align-self-bottom">
+                                    <div class="cell large-4"><b>Result:</b></div>
+                                    <div class="cell large-8">After this stage, you will understand the Java Core and will be able to develop more complex applications.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stage grid-x">
+                            <div class="cell large-4">
+                                <h4>STAGE 2</h4>
+                                <b><h3>WEB</h3></b>
+                            </div>
+                            <div class="cell large-8 grid-x grid-margin-y">
+                                <p style="margin: 0">The stage to get acquainted with Web applications and Web itself.</p>
+                                <div class="cell grid-x align-self-bottom">
+                                    <div class="cell large-4"><b>Estimated Duration:</b></div>
+                                    <div class="cell large-8">1 Month</div>
+                                </div>
+                                <div class="cell grid-x align-self-bottom">
+                                    <div class="cell large-4"><b>Format:</b></div>
+                                    <div class="cell large-8">Self-paced, Online, Practical Tasks</div>
+                                </div>
+                                <div class="cell grid-x align-self-bottom">
+                                    <div class="cell large-4"><b>Program:</b></div>
+                                    <div class="cell large-8">Git & Build Tools, Web, HTTP(s) methods, Java EE Servlets, SQL, Architecture basics, Architectural patterns, Engineering Best-Practices</div>
+                                </div>
+                                <div class="cell grid-x align-self-bottom">
+                                    <div class="cell large-4"><b>Result:</b></div>
+                                    <div class="cell large-8">After this stage, you will be able to develop web applications in Java using Servlets technology, use build and version control tools.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stage grid-x">
+                            <div class="cell large-4">
+                                <h4>STAGE 3</h4>
+                                <b><h3>MODERN FRAMEWORKS</h3></b>
+                            </div>
+                            <div class="cell large-8 grid-x grid-margin-y">
+                                <p style="margin: 0">The stage to get acquainted with modern frameworks and development approaches and techniques.</p>
+                                <div class="cell grid-x align-self-bottom">
+                                    <div class="cell large-4"><b>Estimated Duration:</b></div>
+                                    <div class="cell large-8">2 Months</div>
+                                </div>
+                                <div class="cell grid-x align-self-bottom">
+                                    <div class="cell large-4"><b>Format:</b></div>
+                                    <div class="cell large-8">Self-paced, Online, Light Talks, Practical Tasks, Roasting Battles, Consultants</div>
+                                </div>
+                                <div class="cell grid-x align-self-bottom">
+                                    <div class="cell large-4"><b>Program:</b></div>
+                                    <div class="cell large-8">Architecture advanced, ORM - JPA, Hibernate, Spring Core, REST Basics – Spring Web, Swagger</div>
+                                </div>
+                                <div class="cell grid-x align-self-bottom">
+                                    <div class="cell large-4"><b>Result:</b></div>
+                                    <div class="cell large-8">After this stage, you will be able to develop web applications in Java utilizing modern frameworks and libraries.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stage grid-x">
+                            <div class="cell large-4">
+                                <h4>STAGE 4</h4>
+                                <b><h3>ENTERPRISE</h3></b>
+                            </div>
+                            <div class="cell large-8 grid-x grid-margin-y">
+                                <p style="margin: 0">The stage to dive into frameworks and modern engineering practices.</p>
+                                <div class="cell grid-x align-self-bottom">
+                                    <div class="cell large-4"><b>Estimated Duration:</b></div>
+                                    <div class="cell large-8">2 Months</div>
+                                </div>
+                                <div class="cell grid-x align-self-bottom">
+                                    <div class="cell large-4"><b>Format:</b></div>
+                                    <div class="cell large-8">Online, Light Talks, Practical Tasks, Roasting Battles, Mentoring</div>
+                                </div>
+                                <div class="cell grid-x align-self-bottom">
+                                    <div class="cell large-4"><b>Program:</b></div>
+                                    <div class="cell large-8">CI\CD, REST Advanced, Spring Boot, Authentication & Authorization, Spring Security, Modern UI, AWS, Spring Data</div>
+                                </div>
+                                <div class="cell grid-x align-self-bottom">
+                                    <div class="cell large-4"><b>Result:</b></div>
+                                    <div class="cell large-8">After this stage, you will be able to deploy your application to the Cloud, configure authentication and develop a UI for your app.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="orbit-controls text-right">
+                        <button class="orbit-next">&rarr;</button>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="section cell large-12 grid-x align-center margin-top-3">
+                <div class="cell medium-12 large-3">
+                    <a href="https://autocode-next.lab.epam.com/courses/189" target="_blank" class="expanded button violet">join the course</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="why-java" class="grid-y section margin-top-3">
+            <div class="cell large-12">
+                <h2>Why Choose Java</h2>
+            </div>
+
+            <div class="cell large-12 grid-x grid-margin-x margin-top-2">
+                <p class="cell large-6">
+                    Java is one of the most popular languages in programming. This language is most likely <b>the most common and basic language</b> that most programmers start from. Many Software Developers are still in favor of using Java as a programming language because of its flexibility. 
+                </p>
+                <p class="cell large-6">
+                    Java is a popular programming language. It's used in many international companies, including <b>Uber, Airbnb, Google, Netflix, Instagram, Spotify</b>. Nowadays there are tens of thousands vacancies for Java Developer with competitive salaries.
                 </p>
             </div>
-
-            <div class="rows f-center mb-l w-100">
-                <a href="https://autocode-next.lab.epam.com/courses/189" target="_blank" class="button button-violet button-lemon-shadow">join the course</a>
-            </div>
-
-            <div class="rows f-center mb-xs">
-                <h2 class="ls-lower">
-                    Why Choose Java
-                </h2>
-            </div>
-            <div class="columns f-center mb-m w-50">
-                <p class="paragraph">Java is one of the most popular languages in programming. This language is most likely the most common and basic language that most programmers start from. Many Software Developers are still in favor of using Java as a programming language
-                    because of its flexibility. </p>
-                <p class="paragraph">Java is a multiplatform programming language, that is used in many areas like <b class="paragraph">Web, Server-side, Big Data Development</b>.</p>
-                <p class="paragraph">Java is a popular programming language. It's used in many international companies, including
-                    <b class="paragraph">Uber, Airbnb, Google, Netflix, Instagram, Spotify</b>. Nowadays there are tens of thousands vacancies for Java Developer with competitive salaries </p>
-                <p class="paragraph">Java has a great community. There are many conferences and talks on Java. In you programs you can use any of millions free community-developed code libraries, or you can help to enhance them.
+            <div class="cell large-12 grid-x">
+                <p class="cell large-6">
+                    Java is a multiplatform programming language, that is used in many areas like <b>Web, Server-side, Big Data Development</b>.
+                </p>
+                <p class="cell large-6">
+                    Java has a great community. There are many conferences and talks on Java. In you programs you can use <b>any of millions</b> free community-developed code libraries, or you can help to enhance them.
                 </p>
             </div>
         </div>
 
-        <div id="faq" class="section columns mb-l">
-            <img id="code-ellipse" src="assets/images/code-ellipse.png" />
+        <div id="faq" class="grid-x grid-margin-x margin-top-3">
+            <div class="section cell large-12 grid-x padding-top-3">
 
-            <div class="rows f-center f-align-center mb-m">
-                <h2 class="text-center">
-                    Frequently Asked Questions
-                </h2>
-            </div>
-
-            <div class="rows f-between">
-                <div class="columns f-center w-50">
-                    <div class="question mb-s">
-                        <p class="m-0"><b class="paragraph-sm font-bold">What is Java?</b></p>
-                        <img src="assets/images/underline.png" />
-                        <p class="paragraph-sm">
-                            Java is a high-level multiplatform programming language, developed by Sun Microsystems in 1995. Since then Java got many major updates and now it supports all modern features.
-                        </p>
+                <div class="cell large-12 margin-bottom-1">
+                    <h2>FAQ</h2>
+                </div>
+    
+                <div class="cell large-5 grid-x align-middle">
+                    <div class="cell margin-top-2">
+                        <h5 class="text-green margin-bottom-1">WHAT IS JAVA</h5>
+                        <p>Java is a high-level multiplatform programming language, developed by Sun Microsystems in 1995. Since then Java got many major updates and now it supports all modern features.</p>
                     </div>
-                    <div class="question mb-s">
-                        <p class="m-0"><b class="paragraph-sm font-bold">What is Java used for?</b></p>
-                        <img src="assets/images/underline.png" />
-                        <p class="paragraph-sm">
-                            Java is a general-purpose language, so you can develop any kind of application using it. Java is mainly used for creating enterprise web applications, and for BigData development.
-                        </p>
+                    <div class="cell margin-top-2">
+                        <h5 class="text-green margin-bottom-1">WHAT IS JAVA USED FOR</h5>
+                        <p>Java is a general-purpose language, so you can develop any kind of application using it. Java is mainly used for creating enterprise web applications, and for BigData development.</p>
                     </div>
-                    <div class="question mb-s">
-                        <p class="m-0"><b class="paragraph-sm font-bold">How long does it take to study Java?</b></p>
-                        <img src="assets/images/underline.png" />
-                        <p class="paragraph-sm">
-                            Expected course length is 10 months.
-                        </p>
+                    <div class="cell margin-top-2">
+                        <h5 class="text-green margin-bottom-1">HOW LONG DOES IT TAKE TO STUDY JAVA?</h5>
+                        <p>Expected course length is 10 months.</p>
                     </div>
                 </div>
-                <div class="columns f-center w-50">
-                    <div class="question mb-s">
-                        <p class="m-0"><b class="paragraph-sm font-bold">What type of applications does this course focus on?</b></p>
-                        <img src="assets/images/underline.png" />
-                        <p class="paragraph-sm">
-                            This course focuses on web services, you will study how to create a backend for a web application.
-                        </p>
+
+                <div class="cell large-5 large-offset-1 grid-x align-middle">
+                    <div class="cell margin-top-2">
+                        <h5 class="text-green margin-bottom-1">WHAT TYPE OF APPLICATIONS DOES THIS COURSE FOCUS ON?</h5>
+                        <p>This course focuses on web services, you will study how to create a backend for a web application.</p>
                     </div>
-                    <div class="question mb-s">
-                        <p class="m-0"><b class="paragraph-sm font-bold">What will I be able to do after this course?</b></p>
-                        <img src="assets/images/underline.png" />
-                        <p class="paragraph-sm">
-                            After the course you will be able to pass an interview for Junior Java Developer position and apply for a job offer in a vast majority of IT companies.
-                        </p>
+                    <div class="cell margin-top-2">
+                        <h5 class="text-green margin-bottom-1">WHAT WILL I BE ABLE TO DO AFTER THIS COURSE?</h5>
+                        <p>After the course you will be able to pass an interview for Junior Java Developer position and apply for a job offer in a vast majority of IT companies.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="contacts" class="section columns mb-m">
-            <div class="rows f-center f-align-center mb-m">
-                <h2 class="text-center">
-                    Contacts
-                </h2>
+        <div id="contacts" class="section grid-x grid-padding-x align-spaced align-middle margin-top-5">
+            <div class="cell large-6">
+                <h2 class="margin-bottom-1">Contact us</h2>
+                <h4 class="text-center">FOLLOW US ON SOCIAL MEDIA AND DISCOVER MORE</h4>
             </div>
-
-            <p class="paragraph text-center">
-                Join  our chat in <a href="https://join.slack.com/t/mjc-r0o8608/shared_invite/zt-19dbjp0wh-trLwtW2~WPW5LBdF2lNFJg" target="_blank">slack</a> to keep in touch with our experts and other students.
-                Also follow us on social media and discover more!
-            </p>
-
-            <div class="rows f-center">
-                <a href="https://www.linkedin.com/groups/12668113/" target="_blank" class="contact">
-                    <i class="fa fa-linkedin-square" style="font-size:64px"></i>
+            <div class="cell large-6 grid-x align-center">
+                <a href="https://www.linkedin.com/groups/12668113/" target="_blank" class="contact padding-right-1">
+                    <i class="fa fa-linkedin-square icon-sm"></i>
                     LinkedIn
                 </a>
-                <a href="https://github.com/mjc-school/MJC-School" target="_blank" class="contact">
-                    <i class="fa fa-github-square" style="font-size:64px"></i>
+                <a href="https://github.com/mjc-school/MJC-School" target="_blank" class="contact padding-left-1 padding-right-1">
+                    <i class="fa fa-github-square icon-sm"></i>
                     GitHub
                 </a>
-                <a href="mailto:OrgMJCSchool@epam.com" target="_blank" class="contact">
-                    <i class="fa fa-envelope" style="font-size:64px"></i>
+                <a href="mailto:OrgMJCSchool@epam.com" target="_blank" class="contact padding-left-1 padding-right-1">
+                    <i class="fa fa-envelope icon-sm"></i>
                     e-Mail
                 </a>
-                <a href="https://join.slack.com/t/mjc-r0o8608/shared_invite/zt-19dbjp0wh-trLwtW2~WPW5LBdF2lNFJg" target="_blank" class="contact">
-                    <i class="fa fa-slack" style="font-size:64px"></i>
-                    Slack Chat
+                <a href="https://join.slack.com/t/mjc-r0o8608/shared_invite/zt-19dbjp0wh-trLwtW2~WPW5LBdF2lNFJg" target="_blank" class="contact padding-left-1 padding-right-1">
+                    <i class="fa fa-slack icon-sm"></i>
+                    Slack
                 </a>
-                <a href="https://autocode-next.lab.epam.com/courses/189" target="_blank" class="contact">
-                    <i class="fa fa-code" style="font-size:64px"></i>
+                <a href="https://autocode-next.lab.epam.com/courses/189" target="_blank" class="contact padding-left-1">
+                    <i class="fa fa-code icon-sm"></i>
                     AutoCode
                 </a>
             </div>
         </div>
 
-        <div id="epam" class="section columns">
-            <h2 class="text-center mb-m">Powered By</h2>
+        <div id="epam" class="section grid-x align-center margin-top-3">
+            <div class="cell large-12 text-center">
+                <h2 class="text-center mb-m">Powered By</h2>
+            </div>
 
-            <img src="assets/images/EPAM_LOGO_Primary.png" class="text-center" style="width: 30%; margin: 0 auto 45 auto"/>
+            <div class="cell large-4">
+                <img src="assets/images/EPAM_LOGO_Primary.png" class="text-center" style="width: 100%;"/>
+            </div>
+        </div>
+
+        <div id="footer" class="grid-x margin-top-3">
+            <div class="large-12">
+                <img src="assets/images/footer.png" style="width: 100%; height: 100%;">
+            </div>
         </div>
     </div>
 
     <script src="assets/js/flickity.pkgd.min.js "></script>
+    <script>
+        $(document).foundation();
+    </script>
 </body>
-
 </html>

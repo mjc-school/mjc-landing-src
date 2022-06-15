@@ -4,7 +4,8 @@
     font-style: normal;
 }
 
-body {
+html, body, .container {
+    max-width: 100%;
     overflow-x: hidden;
 }
 
@@ -108,7 +109,7 @@ i {
 }
 
 .icon-sm {
-    margin: 0 10px;
+    margin: 10px;
     font-size: 48px;
 }
 
@@ -172,9 +173,39 @@ i {
 }
 
 #announcement {
-    padding: 60px 0 80px 0;
-    background-image: url(../assets/images/announcement-banner.png);
-    background-size: contain;
+    padding: 60px 0 40px 0;
+    background-color: #263852;
+    border-radius: 60px 0px 60px 80px;
+}
+
+#announcement-logo {
+    width: 150px;
+    margin-left: 45px;
+}
+
+#announcement-cells-left {
+    position: absolute;
+    width: 300px;
+    left: 0;
+    margin-top: -20rem;
+}
+
+#announcement-cells-right {
+    position: absolute;
+    width: 600px;
+    right: 0;
+    margin-top: 8rem;
+}
+
+#announcement-epam-logo {
+    width: 150px;
+    margin-right: 60px;
+}
+
+#faq > .section {
+    background-color: #FAFFD6;
+    border-radius: 0px 100px 100px 100px;
+    padding-bottom: 40px;
 }
 
 #faq > img {
@@ -183,34 +214,7 @@ i {
     margin-top: -7rem;
 }
 
-/* COLORS */
-.top-bar, .top-bar ul {
-    background: #56BE7D;
-}
 
-.button:hover, .button:focus {
-    background-color: #56BE7D;
-}
-
-.text-green {
-    color: #56BE7D;
-}
-
-.text-white {
-    color: #FFFFFF;
-}
-
-.button.violet, .button.violet:hover, .button.violet:focus {
-    background-color: #594DE1;
-}
-
-.benefit-card-green {
-    background-color: #CFF8DF;
-}
-
-.benefit-card-yellow {
-    background-color: #F3FFA8;
-}
 
 .flickity-page-dots {
     right: 300px;
@@ -244,6 +248,166 @@ i {
 
 .flickity-prev-next-button .flickity-button-icon {
     width: 120%;
+}
+
+@media screen and (min-width: 64em) and (max-width: 89.9375em) {
+    #code-left {
+        left: -730px;
+    }
+    #logo {
+        width: 200px;
+        left: 20px;
+        top: 360px;
+    }
+    #announcement-cells-left {
+        margin-top: -27rem;
+    }
+    #announcement-cells-right {
+        margin-top: 17rem;
+    }
+    .section {
+        padding: 0px 60px;
+    }
+    .section-left {
+        padding: 0px 0px 0px 60px;
+    }
+    .stage {
+        width: calc(100% - 60px);
+        height: 540px;
+    }
+}
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    #code-ellipse, #code-left, #logo, #code-right, #code-rectangle, #announcement-cells-left, #announcement-cells-right, #announcement-logo, #announcement-epam-logo {
+        display: none;
+    }
+
+    .section {
+        padding: 0 30px;
+    }
+    .section-left {
+        padding: 0 0 0 30px;
+    }
+    .stage {
+        width: calc(100% - 30px);
+        height: 700px;
+    }
+
+    .pr-10 {
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+
+    .pl-10 {
+        padding-left: 0;
+        padding-top: 10px;
+    }
+
+    .bullets button {
+        margin-bottom: 10px;
+    }
+
+    .top-bar {
+        padding: 0 20px;
+    }
+    .menu li a {
+        padding: 0.35rem 0.5rem;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 39.9375em) {
+    #code-ellipse, #code-left, #logo, #code-right, #code-rectangle, #announcement-cells-left, #announcement-cells-right, #announcement-logo, #announcement-epam-logo {
+        display: none;
+    }
+
+    .top-bar-left {
+        display: none;
+    }
+
+    .top-bar {
+        padding: 0;
+    }
+
+    .title-bar {
+        height: 40px;
+    }
+    .container {
+        margin-top: 40px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    .section {
+        padding: 0 15px;
+    }
+
+    .pr-10 {
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+
+    .pl-10 {
+        padding-left: 0;
+        padding-top: 10px;
+    }
+
+    .benefit-card {
+        padding: 20px 26px;
+    }
+
+    .bullets button {
+        margin-bottom: 10px;
+    }
+
+    .section-left {
+        padding: 0px 0px 0px 15px;
+    }
+    .stage {
+        width: calc(100% - 15px);
+        height: 900px;
+    }
+    .flickity-prev-next-button.next {
+        right: 15px;
+    }
+    .flickity-prev-next-button.previous {
+        right: 275px;
+    }
+    .flickity-page-dots {
+        right: 100px;
+    }
+}
+
+/* COLORS */
+.top-bar, .top-bar ul, .title-bar {
+    background: #56BE7D;
+}
+
+.button:hover, .button:focus {
+    background-color: #56BE7D;
+}
+
+.text-green {
+    color: #56BE7D;
+}
+
+.text-white {
+    color: #FFFFFF;
+}
+
+.button.violet, .button.violet:hover, .button.violet:focus {
+    background-color: #594DE1;
+}
+
+.benefit-card-green {
+    background-color: #CFF8DF;
+}
+
+.benefit-card-yellow {
+    background-color: #F3FFA8;
 }
 
 .margin-top-8 {
