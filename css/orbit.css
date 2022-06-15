@@ -1,0 +1,27 @@
+.bullets {
+    margin: 0 -15px 40px -15px;
+}
+
+.bullets button {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: 2px solid #C5E9D2;
+    border-radius: 12px;
+    padding: 11px 38px;
+    cursor: pointer;
+}
+
+.bullets button.is-active {
+    background-color: transparent;
+    border: 2px solid #56BE7D;
+}
+
+.stage {
+    height: 420px;
+    padding: 38px 50px;
+    border: 2px solid #56BE7D;
+    border-radius: 10px;
+    width: calc(100% - 120px);
+    margin-right: 25px;
+}
