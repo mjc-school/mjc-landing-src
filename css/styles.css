@@ -187,14 +187,14 @@ i {
     position: absolute;
     width: 300px;
     left: 0;
-    margin-top: -20rem;
+    margin-top: -25rem;
 }
 
 #announcement-cells-right {
     position: absolute;
     width: 600px;
     right: 0;
-    margin-top: 8rem;
+    margin-top: 12rem;
 }
 
 #announcement-epam-logo {
@@ -260,10 +260,10 @@ i {
         top: 360px;
     }
     #announcement-cells-left {
-        margin-top: -27rem;
+        margin-top: -32rem;
     }
     #announcement-cells-right {
-        margin-top: 17rem;
+        margin-top: 23rem;
     }
     .section {
         padding: 0px 60px;
@@ -276,6 +276,12 @@ i {
         height: 540px;
     }
 }
+
+#open-day-recording {
+    width: 560px;
+    height: 315px;
+}
+
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
     #code-ellipse, #code-left, #logo, #code-right, #code-rectangle, #announcement-cells-left, #announcement-cells-right, #announcement-logo, #announcement-epam-logo {
         display: none;
@@ -317,6 +323,11 @@ i {
 @media screen and (max-width: 39.9375em) {
     #code-ellipse, #code-left, #logo, #code-right, #code-rectangle, #announcement-cells-left, #announcement-cells-right, #announcement-logo, #announcement-epam-logo {
         display: none;
+    }
+
+    #open-day-recording {
+        width: 340px;
+        height: 190px;
     }
 
     .top-bar-left {
