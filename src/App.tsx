@@ -12,9 +12,10 @@ function App() {
     <Router>
       <div id='container'>
         <Header/>
-        <Routes >
-          <Route path='/' element={<Home/>}/>
-        </Routes >
+        <Home/>
+        {/* <Routes >
+          <Route path='/' element={}/>
+        </Routes > */}
       </div>
     </Router>
   );
