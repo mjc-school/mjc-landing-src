@@ -1,0 +1,127 @@
+.header {
+  background: var(--green);
+  padding: 0 4rem;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 60px auto;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+}
+
+.header-logo, .header-content {
+  margin: auto;
+}
+
+.header-logo > img {
+  vertical-align: middle;
+}
+
+.header-links {
+  list-style: none;
+  display: flex;
+}
+
+.header-links a {
+  text-decoration: none;
+  padding: 0.7rem 1rem;
+  font-size: 20px;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.header-icon {
+  display: none;
+  margin: auto;
+  color: var(--white);
+}
+
+/* S screen size */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .header {
+    padding: 0;
+  }
+
+  .header-logo > img {
+    padding: 0 20px;
+  }
+
+  .header-icon {
+    display: inline;
+    cursor: pointer;
+  }
+
+  .header-content {
+    position: absolute;
+    margin-top: 80px;
+    background-color: var(--green);
+    width: 100%;
+    transition: all 0.5s ease-in;
+  }
+
+  .header-content.collapsed {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-out;
+  }
+
+  .header-links {
+    flex-flow: column;
+    padding: 0 10px;
+    margin: 0 0 1rem;
+  }
+
+  .header-links a {
+    padding: 0;
+  }
+
+  .header-links li {
+    margin: 0.3rem 0;
+  }
+}
+
+/* XS screen size */
+@media screen and (max-width: 39.9375em) {
+  .header {
+    height: 50px;
+    padding: 0;
+  }
+
+  .header-logo > img {
+    height: 40px;
+    padding: 5px 10px;
+  }
+
+  .header-icon {
+    display: inline;
+  }
+
+  .header-content {
+    position: absolute;
+    margin-top: 50px;
+    background-color: var(--green);
+    width: 100%;
+    transition: all 0.5s ease-in;
+  }
+
+  .header-content.collapsed {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-out;
+  }
+
+  .header-links {
+    padding: 0 10px;
+    margin: 0 0 1rem;
+    flex-flow: column;
+  }
+
+  .header-links a {
+    padding: 0;
+  }
+
+  .header-links li {
+    margin: 0.3rem 0;
+  }
+}

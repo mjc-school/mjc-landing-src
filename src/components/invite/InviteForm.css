@@ -1,0 +1,90 @@
+.join-form {
+  max-width: 700px;
+}
+
+.join-form > div {
+  padding-top: 1rem;
+  text-align: justify;
+  font-size: 0.75em;
+}
+
+.join-form > div.success-message {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: justify;
+  transition: all 0.5s ease-out;
+}
+
+.join-form > div.success-message > svg {
+  color: var(--green);
+}
+
+.join-form-input {
+  font-size: 1.5em;
+  font-weight: 400;
+  padding: 0.85em 1em;
+  width: 60%;
+  border-radius: 6px 0 0 6px;
+  transition: all 0.5s ease-out;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+  box-shadow: 5px -7px 0 0 #f0ff92;
+}
+
+.join-form-input.green {
+  border: 3px solid var(--green);
+}
+
+.join-form-input.purple {
+  border: 3px solid var(--purple);
+}
+
+.join-form-input:focus {
+  outline: none;
+}
+
+.join-form-input.error {
+  border: 3px solid var(--red);
+}
+
+.join-form-button {
+  box-sizing: border-box;
+  font-size: 1.5em;
+  font-weight: 400;
+  width: 40%;
+  padding: 0.85em 1em;
+  height: 100%;
+  border-radius: 0 6px 6px 0;
+  color: var(--white);
+  font-family: 'Roboto Mono', monospace;
+  box-shadow: 5px -7px 0 0 #f0ff92;
+  cursor: pointer;
+}
+
+.join-form-button.green {
+  background-color: var(--green);
+  border: 3px solid var(--green);
+}
+
+.join-form-button.purple {
+  background-color: var(--purple);
+  border: 3px solid var(--purple);
+}
+
+@media screen and (max-width: 39.9375em) {
+  .join-form-controls {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .join-form-input {
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+  }
+
+  .join-form-button {
+    width: 100%;
+    z-index: -1;
+    border-radius: 0 0 6px 6px;
+  }
+}

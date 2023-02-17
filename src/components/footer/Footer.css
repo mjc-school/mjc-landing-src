@@ -1,0 +1,36 @@
+.footer-container {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-row-gap: 2em;
+}
+
+.vendor > h1 {
+  font-weight: 300;
+}
+
+.vendor, .copyright {
+  text-align: center;
+}
+
+.copyright {
+  background-color: var(--green);
+  color: var(--white);
+  padding: 0.5em;
+}
+
+#epam-logo {
+  max-width: 400px;
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  #epam-logo {
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  #epam-logo {
+    max-width: 150px;
+  }
+}

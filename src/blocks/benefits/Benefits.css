@@ -1,0 +1,89 @@
+.benefits-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 2em;
+}
+
+.card {
+  padding: 2em;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.card.horizontal {
+  flex-flow: row;
+}
+
+.card > .contacts {
+  display: flex;
+  flex-flow: row;
+  gap: 1em;
+  justify-content: center;
+}
+
+.card > .contacts > a {
+  color: var(--black);
+}
+
+.card > h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+.card.green {
+  background-color: var(--green-light);
+}
+
+.card.yellow {
+  background-color: var(--yellow);
+}
+
+.card.colspan-2 {
+  grid-column: span 2;
+}
+
+.card.colspan-3 {
+  grid-column: span 3;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .benefits-container {
+    padding: 0 1em;
+  }
+
+  .benefits-container > h1 {
+    font-size: 1.5em;
+    font-weight: normal;
+  }
+
+  .card > h1 {
+    font-weight: normal;
+  }
+
+  .benefits-card-container {
+    grid-row-gap: 1em;
+  }
+
+  .card {
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 63.9375em) {
+  .benefits-card-container {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(6, auto);
+  }
+
+  .card.colspan-2, .card.colspan-3 {
+    grid-column: span 1;
+  }
+
+  .card.horizontal {
+    flex-flow: column;
+  }
+}

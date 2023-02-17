@@ -1,0 +1,39 @@
+.contact-container {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.contact-container p {
+  margin: 0
+}
+
+.contact-container h1 {
+  font-weight: lighter;
+  font-size: 3em;
+  margin: 0 0 0.1em;
+}
+
+@media screen and (max-width: 63.9375em) {
+  .contact-container {
+    flex-flow: column;
+    align-items: flex-start;
+  }
+
+  .contact-container > h1 {
+    font-size: 2em;
+  }
+
+  .contacts-icons {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  .contact-container h1 {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+}
