@@ -45,12 +45,7 @@ const InviteForm = ({color} : InviteFormProps) => {
   return (
     <div className='join-form'>
       <div className='join-form-controls'>
-        <input type='text' className={'join-form-input ' + color + (error ? ' error': '')} value={email} onChange={e => handleEmailInput(e)} placeholder='john.jackson@foo.bar'></input>
-        <button type='submit' className={'join-form-button ' + color} onClick={handleSubmit}>join the course</button>
-      </div>
-      <div>*Your security is important to us. We do not store your email. By clicking the button you agree to pass your email to Slack to receive an invitation email.</div>
-      <div className={'success-message ' + (success ? '' : 'hidden')}>
-        An invitation has been sent. Please check your email and join slack <RxCheckCircled size={20}/>
+        <a href='https://discord.gg/GU9RX6kBPb' target='_blank' className={'join-form-button ' + color}>join the course</a>
       </div>
     </div>
   )
