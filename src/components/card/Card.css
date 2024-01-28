@@ -1,0 +1,18 @@
+.card {
+  text-decoration: none;
+  align-items: center;
+}
+
+.card>h3 {
+  text-align: center;
+}
+
+.card>span {
+  text-align: justify;
+}
+
+.card>h3::before {
+  background: none;
+  width: 0;
+  height: 0;
+}

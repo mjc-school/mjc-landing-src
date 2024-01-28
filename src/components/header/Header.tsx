@@ -1,11 +1,6 @@
-import React, {useState} from 'react';
-import { Link } from 'react-router-dom';
+import {useState} from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx'
 import './Header.css';
-
-// type HeaderProperties = {
-//   collapsed: boolean;
-// }
 
 const Header = () => {
   const [collapsed, setCollapsed] = useState(true);
@@ -20,7 +15,7 @@ const Header = () => {
         <RxHamburgerMenu size={40}/>
       </div>
       <div className='header-logo'>
-        <img src='logo-header.png'/>
+        <img src='img/logo-header.png'/>
       </div>
       <div className={'header-content ' + (collapsed ? 'collapsed' : '')}>
         <ul className='header-links'>

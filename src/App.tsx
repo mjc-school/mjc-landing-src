@@ -4,18 +4,18 @@ import {
   Route
 } from 'react-router-dom';
 import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 import Home from './pages/home/Home';
-import './App.css';
 
 function App() {
   return (
     <Router>
       <div id='container'>
-        <Header/>
-        {/* <Home/> */}
+        {/* <Header/> */}
         <Routes >
           <Route path='/' element={<Home/>}/>
         </Routes >
+        <Footer/>
       </div>
     </Router>
   );

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "online",
+    "title": "ONLINE EDUCATION",
+    "description": "The constraints of traditional classroom settings are gone. With online education, the classroom is wherever you are. You dictate the rhythm of your learning, allowing for a more personalized and adaptable experience. Dive into lessons at your most productive hours, revisit challenging topics until they're mastered, and engage with course materials in a way that suits your learning style.",
+    "styles": "colspan-3"
+  },
+  {
+    "id": "experienced_mentors",
+    "title": "EXPERIENCED MENTORS",
+    "description": "What sets our courses apart is the ongoing maintenance and updates overseen by these seasoned professionals. As technology advances and trends shift, our mentors ensure that the course materials remain relevant, up-to-date, and aligned with the latest advancements in Java programming. This commitment to staying current reflects not just their dedication to the field but also their passion for fostering a learning environment that equips students with the most contemporary skills and knowledge.",
+    "styles": "colspan-4"
+  },
+  {
+    "id": "payback",
+    "title": "PASS IT TO THE NEXT PERSON AND DOUBLE IT",
+    "description": "At the heart of our educational philosophy lies a powerful principle: the concept of paying it forward and fostering a cycle of continuous learning and mentorship. This principle not only enables students to access education freely but also encourages them to become integral contributors to the educational ecosystem.<br/><br/>The idea is simple yet profound: students benefit from the opportunity to study at our school without any financial burden. In return, we invite and encourage them to embrace a role as mentors, passing on the knowledge they've gained to the next generation of eager learners. It's a virtuous cycle where the recipients of knowledge become the torchbearers of education, perpetuating a legacy of learning and growth.",
+    "styles": "colspan-8"
+  },
+  { 
+    "id": "open_source",
+    "title": "OPEN SOURCED",
+    "description": "One of our core principles is transparency, and that's why we've chosen an open-source approach for our platform and educational materials. By making our resources publicly available on <a href='https://github.com/mjc-school/MJC-School' target='_blank'>GitHub</a>, <a href='https://autocode-next.lab.epam.com/courses/189' target='_blank'>Autocode</a>, and <a href='https://www.youtube.com/@mjcschool1896/streams' target='_blank'>YouTube</a>, we're not just offering education; we're fostering a culture of collaboration, innovation, and accessibility.<br/><br/>By embracing an open-source approach, we're not just offering education; we're inviting collaboration, innovation, and participation. Join us in this journey of knowledge-sharing, contribute your insights, and be part of a community-driven initiative that empowers learners globally to access high-quality educational resources.",
+    "styles": "colspan-6"
+  },
+  {
+    "id": "free",
+    "title": "FREE AND FOR EVERYONE",
+    "description": "Access to education is a fundamental right, and we're committed to breaking down barriers by offering our courses completely free of charge. Our belief is simple yet powerful: education should be accessible to all, irrespective of geographical location, financial status, or background. This commitment to inclusivity forms the cornerstone of our educational philosophy.",
+    "styles": "colspan-5"
+  },
+  {
+    "id": "opportunities",
+    "title": "PROFESSIONAL OPPORTUNITIES",
+    "description": "The course you're undertaking serves as a robust foundation, providing you with a comprehensive skill set that positions you favorably to step into the professional realm as a Junior Software Developer. It's not just about acquiring knowledge; it's about gaining practical skills and confidence that open doors to a myriad of professional opportunities in the dynamic world of software development.",
+    "styles": "colspan-4"
+  },
+  {
+    "id": "community",
+    "title": "COMMUNITY SUPPORT",
+    "description": "Community support extends far beyond the confines of the classroom—it's the heartbeat of our educational ecosystem. Our commitment to fostering a vibrant, supportive community goes beyond the realms of traditional learning. It's an inclusive network that thrives on collaboration, knowledge sharing, and collective growth.<br/><br/>When you join our community, you're not just enrolling in a course; you're gaining access to a dynamic network of like-minded individuals driven by a passion for learning and development. Our channels are hubs of interaction, where learners, instructors, and industry experts converge to exchange ideas, seek advice, and celebrate achievements.<br/><br/> Subscribe to our channels, join chats and stay informed about all the upcoming events!",
+    "styles": "colspan-8"
+  },
+  {
+    "id": "mentoring",
+    "title": "PRODUCTION MENTORING",
+    "description": "Stage 4 represents the pinnacle of our educational program, where learners transition into an individual mentoring format. Here, production engineers, equipped with extensive expertise and hands-on experience, become your guides, leading you through an advanced educational curriculum tailored to your specific needs and aspirations. <br/><br/> The mentorship offered during this stage isn't confined to conventional teaching methods; it's a personalized, one-on-one interaction that delves deep into the intricacies of the subject matter. These production engineers, with their firsthand knowledge of industry practices, navigate you through complex concepts, real-time scenarios, and practical applications, bridging the gap between theoretical learning and its implementation in real production environments.",
+    "styles": "colspan-7"
+  }
+]

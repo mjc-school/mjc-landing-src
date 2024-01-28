@@ -1,6 +1,6 @@
 .java-content {
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(3, auto);
   grid-column-gap: 4em;
   row-gap: 2em;
 }
@@ -10,9 +10,21 @@
   text-align: justify;
 }
 
-@media screen and (max-width: 63.9375em) {
+.reason-title {
+  background-color: var(--primary);
+  padding: 0.25em 0.5em;
+}
+
+@media screen and (max-width: 39.9375em) {
   .java-content {
     grid-template-columns: auto;
     row-gap: 1em;
+  }
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .java-content {
+    grid-template-columns: repeat(2, auto);
+    gap: 1em;
   }
 }

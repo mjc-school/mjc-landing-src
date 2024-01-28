@@ -1,0 +1,47 @@
+[
+  {
+    "id": "Stage 0",
+    "title": "fundamentals",
+    "description": "Stage 0 serves as an invaluable introduction, laying the foundation for your journey into the world of computer science and Java programming. It's designed to familiarize you with the fundamental concepts and basics essential for a comprehensive understanding of the subsequent stages. This stage acts as a springboard, ensuring that learners possess a solid footing before diving into more advanced topics.<br/><br/>If you come into this course with prior computer science knowledge, Stage 0 acts as a refresher, allowing you to revisit and reinforce your understanding of essential concepts while gradually transitioning into Java basics. It's an opportunity to solidify your existing knowledge and bridge any gaps before progressing further.<br/><br/>For those who might be new to computer science, Stage 0 provides a gentle initiation into the realm of programming. While it assumes some initial computer science knowledge, it's structured to accommodate learners who might have limited or no prior experience. It's a starting point—an invitation to embark on a learning journey that introduces you to the foundational principles and paves the way for a gradual comprehension of Java programming.",
+    "duration": "2 Months",
+    "format": "Self-paced, Online, Practical Tasks, Light Talks",
+    "program": "Computer science course, Infrastructure & Environment, JDK, JRE, Git Basics, IDE, Junit Concepts, Java Lang Syntax, Java Fundamentals, Algorithms and Data Structures, OOP/OOD Fundamentals",
+    "result": "After stage 0 you will be able to develop simple console Java applications."
+  },
+  {
+    "id": "Stage 1",
+    "title": "core",
+    "description": "Stage 1 marks a pivotal phase in your learning journey, offering an immersive experience into the core mechanisms and essential tools that Java presents for tackling a diverse array of tasks. It's a stage meticulously crafted to equip you with the foundational knowledge and skills necessary to navigate the multifaceted landscape of Java programming.<br/><br/>As you navigate through this stage, you'll encounter tools and libraries integral to Java development, empowering you to efficiently tackle diverse tasks. From understanding the power of integrated development environments (IDEs) to exploring the functionality of libraries like Java Collections Framework, you'll gain a comprehensive understanding of how these tools can streamline your coding process and enhance your efficiency as a Java programmer.<br/><br/>Furthermore, Stage 1 serves as a stepping stone, laying the groundwork for your progression into more advanced topics in subsequent stages. It's a pivotal phase where you'll build a strong base of knowledge and skills, setting the stage for deeper explorations into topics such as advanced data structures, algorithms, and the development of robust applications using Java.",
+    "duration": "2 Months",
+    "format": "Self-paced, Online, Practical Tasks, Light Talks",
+    "program": "Exceptions, Strings, Generics, Collections, Stream API, Java I/O, NIO, Data Formats (JSON, XML, YML), Concurrency",
+    "result": "After this stage, you will understand the Java Core and will be able to develop more complex applications."
+  },
+  {
+    "id": "Stage 2",
+    "title": "web",
+    "description": "Stage 2 is an exciting phase where you'll delve deeper into the intricate world of web applications and the underlying structure of the web itself. It's a pivotal stage that bridges the gap between theory and application, introducing you to the dynamic realm of web development and its underlying technologies.<br/><br/>In this stage, you'll explore the multifaceted landscape of web applications, gaining insights into their architecture, functionality, and the technologies that drive them. You'll navigate through the core components of web applications, from client-side to server-side development, understanding the crucial interplay between these elements in creating responsive, interactive, and user-friendly web experiences.<br/><br/>Embrace this stage as a pivotal moment in your journey toward becoming a proficient web developer. Emphasize not just the technical skills but also the holistic understanding of creating impactful, user-centric web applications. Cultivate a mindset that appreciates the interconnectedness of various web technologies, empowering you to create innovative solutions that cater to the diverse needs of users in the digital sphere.",
+    "duration": "1 Month",
+    "format": "Self-paced, Online, Practical Tasks, Light Talks",
+    "program": "Git & Build Tools, Web, HTTP(s) methods, Java EE Servlets, SQL, Architecture basics, Architectural patterns, Engineering Best-Practices",
+    "result": "After this stage, you will be able to develop web applications in Java using Servlets technology, use build and version control tools."
+  },
+  {
+    "id": "Stage 3",
+    "title": "modern frameworks",
+    "description": "Stage 3 heralds an exhilarating phase dedicated to the exploration and mastery of modern Java frameworks, as well as cutting-edge development approaches and techniques. It's a pivotal stage in your journey toward becoming a proficient Java developer, introducing you to the latest tools and methodologies that drive innovation and efficiency in software development.<br/><br/>In this stage, you'll immerse yourself in the vibrant ecosystem of modern Java frameworks designed to streamline development processes and enhance productivity. You'll explore an array of frameworks such as Spring, JPA, Hibernate and many more, each offering unique functionalities and empowering developers with powerful tools to build robust, scalable, and maintainable Java applications.<br/><br/>Furthermore, this stage invites you to explore advanced techniques and best practices in Java development. From mastering RESTful APIs, classic 3-layered architecture to implementing effective data persistence strategies with Hibernate and JPA, you'll gain a comprehensive toolkit to architect and develop sophisticated Java applications.",
+    "duration": "2 Months",
+    "format": "Self-paced, Online, Light Talks, Practical Tasks, Roasting Sessions, Consultants",
+    "program": "Architecture advanced, ORM - JPA, Hibernate, Spring Core, REST Basics – Spring Web, Swagger",
+    "result": "After this stage, you will be able to develop web applications in Java utilizing modern frameworks and libraries."
+  },
+  {
+    "id": "Stage 4",
+    "title": "enterprise",
+    "description": "This stage serves as an immersive and comprehensive exploration into the intricate world of Java frameworks and contemporary engineering practices. It represents a pivotal phase in your educational journey, inviting you to not just explore but deeply immerse yourself in the multifaceted realm of Java frameworks and the innovative engineering approaches that define modern software development.<br/><br/>Within this stage, you'll embark on a profound journey, delving into a diverse array of Java frameworks meticulously designed to address various facets of software development. It's a phase dedicated to understanding, mastering, and leveraging the power of frameworks such as Spring Boot, Spring Security, HATEOAS, Spring Data and other specialized tools. Each framework encapsulates a wealth of functionalities, patterns, and best practices that empower developers to build resilient, scalable, and maintainable Java applications.<br/><br/>Yet, this stage isn't merely about acquiring technical expertise; it's about embracing a mindset that thrives on innovation and adaptability in engineering practices. It's an invitation to explore and internalize contemporary methodologies that underpin successful software engineering in the modern era. You'll immerse yourself in the ethos of agile methodologies, DevOps practices, Cloud development and Continuous Integration/Continuous Deployment (CI/CD) pipelines, understanding how these methodologies orchestrate seamless, collaborative, and iterative development cycles.",
+    "duration": "2 Months",
+    "format": "Online, Light Talks, Practical Tasks, Roasting Battles, Mentoring",
+    "program": "CI\\CD, REST Advanced, Spring Boot, Authentication & Authorization, Spring Security, Modern UI, AWS, Spring Data",
+    "result": "After this stage, you will be able to deploy your application to the Cloud, configure authentication and develop a UI for your app."
+  }
+]

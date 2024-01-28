@@ -2,11 +2,13 @@ import './FAQ.css'
 
 const FAQ = () => {
   return (
-    <div id='faq' className='container yellow'>
-      <img src='cells-black-top.png' id='cells-top'/>
-      <img src='cells-black-bottom.png' id='cells-bottom'/>
-      <h1>FAQ</h1>
-      <div className='faq-content'>
+    <div id='faq' className='container'>
+      <div className='container-title'>
+        <h1>
+          FAQ
+        </h1>
+      </div>
+      <div className='container-content faq-content'>
         <div className='faq-question'>
           <h2>WHAT IS JAVA</h2>
           <p>Java is a high-level multiplatform programming language, developed by Sun Microsystems in 1995. Since then Java got many major updates and now it supports all modern features.</p>

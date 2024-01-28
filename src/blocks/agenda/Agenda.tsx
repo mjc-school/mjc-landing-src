@@ -18,7 +18,6 @@ import {
 } from 'react-icons/rx';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import './Agenda.css';
-import InviteForm from '../../components/invite/InviteForm';
 
 interface Stage {
   id: string;
@@ -31,41 +30,10 @@ interface Stage {
 }
 
 const Agenda = () => {
-  const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i
   const [stages, setStages] = useState<Stage[]>([])
-  const [email, setEmail] = useState('')
-  const [error, setError] = useState(false)
-  const [success, setSuccess] = useState(false)
-
-  const handleEmailInput = (event: BaseSyntheticEvent) => {
-    setEmail(event.target.value)
-    setError(!emailRegex.test(event.target.value) && event.target.value)
-    setSuccess(false)
-  }
-
-  const handleSubmit = () => {
-    if (!emailRegex.test(email)) {
-      setError(true)
-      setSuccess(false)
-      return
-    }
-
-    const requestOptions = {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({email: email})
-    }
-    fetch('/api/slack/invite', requestOptions)
-      .then(response => response.json())
-      .then(() => setSuccess(true))
-      .catch(() => {
-        setError(true)
-        setSuccess(true)
-      })
-  }
 
   useEffect(() => {
-    fetch('stages.json')
+    fetch('json/stages.json')
       .then(response=> response.json())
       .then(data => {
         setStages(data)
@@ -73,14 +41,16 @@ const Agenda = () => {
   }, [])
 
   return (
-    <div id='agenda' className='container'>
-      <h1>Course Agenda</h1>
+    <div id='agenda' className='container alt-2'>
+      <div className='container-title'>
+        <h1>Course Agenda</h1>
+      </div>
       <CarouselProvider
         naturalSlideWidth={100}
         naturalSlideHeight={25}
         totalSlides={stages.length}
         isIntrinsicHeight={true}
-        className='agenda-carousel'
+        className='container-content agenda-carousel'
       >
         <div className='agenda-stages'>
           {stages.map((stage, index) => (
@@ -94,10 +64,10 @@ const Agenda = () => {
               <div className='agenda-stage'>
                 <div className='agenda-stage-title'>
                   <h2>{stage.id}</h2>
-                  <h1>{stage.title}</h1>
+                  <h2><b>{stage.title}</b></h2>
                 </div>
                 <div className='agenda-stage-content'>
-                  <p>{stage.description}</p>
+                  <p dangerouslySetInnerHTML={{__html: stage.description}}></p>
                   <div className='agenda-stage-features'>
                     <h3>Duration:</h3>
                     <h4>{stage.duration}</h4>
@@ -130,10 +100,10 @@ const Agenda = () => {
             <RxArrowRight size='48'/>
           </ButtonNext>
         </div>
+        <div className='agenda-join'>
+          <a href='https://discord.gg/GU9RX6kBPb' target='_blank' className='button'>Join</a>
+        </div>
       </CarouselProvider>
-      <div className='agenda-join-form-container'>
-        <InviteForm color='purple'/>
-      </div>
     </div>
   )
 }

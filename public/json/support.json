@@ -1,0 +1,26 @@
+[
+  {
+    "href": "https://github.com/mjc-school/MJC-School",
+    "title": "GitHub",
+    "description": "Golden source for all of our materials and tasks.",
+    "icon": "RxGithubLogo"
+  },
+  {
+    "href": "https://autocode-next.lab.epam.com/courses/189",
+    "title": "AutoCode",
+    "description": "Central point to start your education. You can find all stages here.",
+    "icon": "RxCode"
+  },
+  {
+    "href": "https://discord.gg/GU9RX6kBPb",
+    "title": "Discord",
+    "description": "Join our discord server to get involved into community.",
+    "icon": "SiDiscord"
+  },
+  {
+    "href": "mailto:mjavac.school@gmail.com",
+    "title": "e-Mail",
+    "description": "Send us e-mail in case you would like to share ideas or feedback to MJC School core team.",
+    "icon": "MdEmail"
+  }
+]

@@ -11,14 +11,15 @@
   flex-flow: column;
   align-items: center;
   gap: 1em;
-  width: 150px;
+  min-width: 150px;
   text-align: center;
 }
 
 .partner > a {
   text-decoration: none;
-  color: var(--black);
+  color: var(--dark);
   font-size: 1.25em;
+  display: contents;
 }
 
 .partner > a > img {

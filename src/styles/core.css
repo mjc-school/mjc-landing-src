@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: Poppins, monospace;
+  background-color: var(--grey);
+  color: var(--dark);
+}
+
+html {
+  scroll-behavior:smooth
+}
+
+html, body, #root, #container {
+  width: 100%;
+}
+
+button {
+  font-family: Poppins, monospace;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+h1::before {
+  background-image: url('/public/img/container-title-bullet-accent.png');
+  background-size: 30px 30px;
+  display: inline-block;
+  width: 30px; 
+  height: 30px;
+  margin-right: 0.25em;
+  content:"";
+}
+
+h3::before {
+  background-image: url('/public/img/container-title-bullet-accent.png');
+  background-size: 15px 15px;
+  display: inline-block;
+  width: 15px; 
+  height: 15px;
+  margin-right: 0.25em;
+  content:"";
+}
+
+a {
+  color: var(--dark);
+  font-weight: bold;
+}
+
+:root {
+  --primary: #A7DA64;
+  --accent: #2B2B2B;
+  --white: #FFF;
+  --grey: #F2F0F6;
+  --dark: #2B2B2B;
+}
+
+@media screen and (max-width: 63.9375em) {
+  h1::before, h3::before {
+    margin: 0;
+    width: 0;
+    height: 0;
+  }
+}

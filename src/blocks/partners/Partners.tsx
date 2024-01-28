@@ -3,8 +3,16 @@ import './Partners.css'
 const Partners = () => {
   return (
     <div id='partners' className='container'>
-      <h1>Partners</h1>
-      <div className='partners-content'>
+      <div className='container-title'>
+        <h1>Partners</h1>
+      </div>
+      <div className='container-content partners-content'>
+        <div className='partner'>
+          <a href='https://wearecommunity.io/communities/mjc' target='_blank'>
+            <img src='EPAM_LOGO_Primary.png'/>
+            EPAM
+          </a>
+        </div>
         <div className='partner'>
           <a href='https://wearecommunity.io/communities/mjc' target='_blank'>
             <img src='mjc.png'/>
@@ -20,7 +28,7 @@ const Partners = () => {
         <div className='partner'>
           <a href='https://wearecommunity.io/communities/ljc' target='_blank'>
             <img src='ljc.png'/>
-            Lithuanian Java Community
+            LJC
           </a>
         </div>
         <div className='partner'>

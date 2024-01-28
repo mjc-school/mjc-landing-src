@@ -1,0 +1,179 @@
+.container {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto;
+  background: url('/public/img/paws.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.container.alt {
+  background: url('/public/img/paws_centered.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.container.alt-2 {
+  background: none;
+}
+
+.container.alt-2::after {
+  background-image: url('/public/img/cat_eyes_green.png');
+  background-size: 16vw 8vw;
+  display: inline-block;
+  width: 16vw;
+  height: 8vw;
+  margin-right: 0.25em;
+  bottom: -1px;
+  position: absolute;
+  content: "";
+}
+
+.container.alt-3 {
+  background: url('/public/img/multi_paws.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.container:first-of-type {
+  padding: 0 4em 1em;
+}
+
+.container-content {
+  padding: 1em 0;
+  max-width: 70vw;
+  justify-self: center;
+}
+
+.container-title {
+  padding: 0.5em 4em;
+  background: var(--primary);
+}
+
+.container-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 1em;
+  padding: 1em 32em;
+}
+
+.colspan-2 {
+  grid-column: span 2;
+}
+
+.colspan-3 {
+  grid-column: span 3;
+}
+
+.colspan-4 {
+  grid-column: span 4;
+}
+
+.colspan-5 {
+  grid-column: span 5;
+}
+
+.colspan-6 {
+  grid-column: span 6;
+}
+
+.colspan-7 {
+  grid-column: span 7;
+}
+
+.colspan-8 {
+  grid-column: span 8;
+}
+
+.rowspan-2 {
+  grid-row: span 2;
+}
+
+.rowspan-3 {
+  grid-row: span 3;
+}
+
+.rowspan-4 {
+  grid-row: span 4;
+}
+
+.rowspan-5 {
+  grid-row: span 5;
+}
+
+.rowspan-6 {
+  grid-row: span 6;
+}
+
+.rowspan-7 {
+  grid-row: span 7;
+}
+
+.rowspan-8 {
+  grid-row: span 8;
+}
+
+.justify-self-center {
+  justify-self: center;
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .container:first-of-type {
+    padding: 0 2em;
+  }
+
+  .container, .container.alt, .container.alt-3 {
+    background: none;
+  }
+
+  .container.alt-2::after {
+    display: none;
+  }
+
+  .container-content {
+    max-width: 100vw;
+    padding: 1em 2em;
+  }
+
+  .container-title {
+    padding: 0.5em 2em;
+    text-align: center;
+  }
+
+  .container-cards {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 1em;
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  .container:first-of-type {
+    padding: 0 1em;
+  }
+
+
+  .container, .container.alt, .container.alt-3 {
+    background: none;
+  }
+
+  .container.alt-2::after {
+    display: none;
+  }
+
+  .container-title {
+    padding: 0.5em 1em;
+    text-align: center;
+  }
+
+  .container-content {
+    padding: 1em;
+    max-width: 100vw;
+  }
+
+  .container-cards {
+    display: flex;
+    flex-flow: column;
+    gap: 1em;
+  }
+}

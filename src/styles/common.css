@@ -1,0 +1,10 @@
+.button {
+  padding: 0 60px;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--accent);
+  width: 120px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+}
